@@ -22,7 +22,8 @@ Route facts to the right skill file:
 | Playbook | Owner skill |
 |----------|-------------|
 | Generic connect / navigate / combat gates | `mud-skill` |
-| Discworld classes, guilds, Ankh rituals | `discworld-mud` |
+| Discworld classes, guilds | `discworld-mud` |
+| Ankh-Morpork survival rituals | `discworld-ankh-survival` |
 | Harvest ritual itself | this file |
 
 Fleet-wide CAST IRON routing table: `SimonBarnett/agentic_build` skill `harvest-agent-skills`.

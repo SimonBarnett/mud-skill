@@ -12,8 +12,18 @@ P0 is seed skills + docs (no prior in-repo harvest source yet).
 
 Bob-job loop started on issue #1.
 
+## 2026-09-22 — issue #3 (Ankh survival)
+
+Harvested companion `discworld-ankh-survival` from GitHub issue #3 and public
+newbie-oriented material (link-out only, no instance credentials):
+
+- [Discworld MUD wiki](https://discworld.starturtle.net/) — city/guild orientation
+- [discworldmud.org](https://www.discworldmud.org/) — official site newbie pointers
+
+Ritual steps are agent procedure (lit streets, no early alley wander, score/HP,
+guild recruiter, ask before pkill/theft); not copied verbatim from any one page.
+
 ## 2026-09-22 — harvest-mud-skill (issue #4)
 
 Added dedicated `harvest-mud-skill` SKILL.md; `mud-skill` CAST IRON points at it.
 Install/validator include the harvest skill (H1–H2).
-

@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
-foreach ($name in @("mud-skill", "discworld-mud", "harvest-mud-skill")) {
+foreach ($name in @("mud-skill", "discworld-mud", "harvest-mud-skill", "discworld-ankh-survival")) {
   $src = Join-Path $root ".grok\skills\$name"
   $dest = Join-Path $HOME ".grok\skills\$name"
   New-Item -ItemType Directory -Force -Path $dest | Out-Null

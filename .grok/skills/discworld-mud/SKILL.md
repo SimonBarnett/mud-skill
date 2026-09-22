@@ -24,8 +24,10 @@ from operator-approved sources (U2).
 ## Newbie path (stub)
 
 1. Confirm character + connection details from the human (do not invent).
-2. Orient: whoami / score / inventory / exits.
-3. Defer guild choice until human confirms.
+2. If starting in **Ankh-Morpork**, load **`discworld-ankh-survival`** and run
+   its first-10-minute ritual (lit streets, no alley wander, flee thieves).
+3. Otherwise orient: whoami / score / inventory / exits.
+4. Defer guild choice until human confirms.
 
 ## Warrior class playbook (stub)
 
