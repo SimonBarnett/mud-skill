@@ -12,3 +12,8 @@ P0 is seed skills + docs (no prior in-repo harvest source yet).
 
 Bob-job loop started on issue #1.
 
+## 2026-09-22 — harvest-mud-skill (issue #4)
+
+Added dedicated `harvest-mud-skill` SKILL.md; `mud-skill` CAST IRON points at it.
+Install/validator include the harvest skill (H1–H2).
+

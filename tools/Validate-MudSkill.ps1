@@ -7,6 +7,7 @@ function Require-File($rel) {
 }
 Require-File ".grok\skills\mud-skill\SKILL.md"
 Require-File ".grok\skills\discworld-mud\SKILL.md"
+Require-File ".grok\skills\harvest-mud-skill\SKILL.md"
 Require-File "docs\functional-spec.md"
 Require-File "docs\feature-request-mud-skill-2026-09-22.md"
 Require-File "docs\build-and-test-plan.md"
@@ -19,6 +20,10 @@ foreach ($n in @("name: mud-skill", "ready for human UAT", "Discworld")) {
 $dw = Get-Content (Join-Path $root ".grok\skills\discworld-mud\SKILL.md") -Raw
 foreach ($n in @("name: discworld-mud", "Warrior", "ready for human UAT")) {
   if ($dw -notmatch [regex]::Escape($n)) { Write-Error "discworld-mud missing: $n"; exit 1 }
+}
+$harvest = Get-Content (Join-Path $root ".grok\skills\harvest-mud-skill\SKILL.md") -Raw
+foreach ($n in @("name: harvest-mud-skill", "Empty harvest", "/harvest-mud-skill")) {
+  if ($harvest -notmatch [regex]::Escape($n)) { Write-Error "harvest-mud-skill missing: $n"; exit 1 }
 }
 Write-Output "Validate-MudSkill: OK"
 exit 0
