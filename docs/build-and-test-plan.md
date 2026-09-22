@@ -8,7 +8,7 @@
 
 ## BT1 (install)
 
-- `tools/Install-MudSkill.ps1` copies `mud-skill` and `discworld-mud` into `~/.grok/skills`.
+- `tools/Install-MudSkill.ps1` copies `mud-skill`, `discworld-mud`, and `harvest-mud-skill` into `~/.grok/skills`.
 
 ## BT2 (content bar)
 
