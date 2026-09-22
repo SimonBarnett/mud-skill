@@ -38,3 +38,18 @@ Sources (link-out, no credentials):
 
 - [Discworld MUD wiki](https://discworld.starturtle.net/) — guild / class orientation
 - GitHub issue #12 — acceptance G1/G2 scope (no extra invented guilds)
+
+## 2026-09-22 — issue #20 (playbook depth)
+
+Expanded `discworld-mud` **Warrior** and **Witch** class playbooks (8–9 numbered
+steps each) with LOCKED decision points and explicit UNKNOWN gaps. Harvested from
+public newbie documentation only — no credentials or invented hosts.
+
+Sources (link-out):
+
+- [Warriors' Guild newbie doc](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fnewbie%2Fwarriors_guild)
+- [Warrior specialisations newbie doc](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fnewbie%2Fwarrior_specialisations)
+- [Witches' Guild newbie doc](http://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fnewbie%2Fwitches_guild)
+- [Guide for young warriors](https://dwwiki.mooo.com/wiki/Guide_for_young_warriors) — etiquette pointers only
+- [Guide for young witches](https://dwwiki.mooo.com/wiki/Guide_for_young_witches) — early skill themes only
+- GitHub issue #20 — acceptance A1–A4 scope
