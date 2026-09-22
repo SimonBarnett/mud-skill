@@ -1,31 +1,36 @@
-﻿---
+---
 name: discworld-guild-wizard
 description: >
-  Discworld MUD wizard guild: spells, magic, university themes. Use for wizard guild, spells, unseen.
+  Discworld MUD Wizards' guild playbook leaflet.
+  Does not stamp ready for human UAT.
 ---
 
-# Wizards' Guild
+# Wizards'
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **guild, lore, fight** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **guild, fight, lore** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fnewbie%2Fwizards_guild
+- https://discworld.starturtle.net/
+- https://dwwiki.mooo.com/wiki/Guilds
 
 ## LOCKED
 
-- Wizards use spell slots and guild libraries per public newbie wizard docs.
-- Unseen University themes tie to Ankh-Morpork (`discworld-location-am-unseen-university`).
-- Do not spam high-risk spells in city streets without human OK.
+1. LOCKED — Read in-game `/doc/newbie/wizards_guild` and guild help before join (starturtle URL above).
+2. LOCKED — Human confirms guild join — resign is painful; load `discworld-mud` class table.
+3. LOCKED — Train via `advance` in guild advance rooms and TM (`discworld-skills-experience`); ask before big XP spends.
+4. LOCKED — Combat and theft default human-in-the-loop (`mud-skill` combat gate).
+5. LOCKED — Spell slots, libraries, and UU themes (`discworld-location-am-unseen-university`).
+6. LOCKED — Components via `components <spell>` help (`discworld-shop-magic-components`).
+7. LOCKED — JPCT portals — wizard responsibility; `look enter portal` before use.
 
 ## UNKNOWN
 
-- Spell progression costs and quest gates  - in-game.
+- Optimal spell XP path — guild-specific; not in newbie doc summary.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Human confirms guild join; read in-game `/doc/newbie/wizard_guild` or equivalent help on [https://discworld.starturtle.net/](https://discworld.starturtle.net/).
-2. LOCKED â€” Class playbooks in `discworld-mud` for warrior/witch; others use this leaflet + game teachers.
-3. LOCKED â€” Advance skills in guild rooms (`discworld-skills-experience`); ask before large `advance` spends.
-4. LOCKED â€” Combat defaults human-in-the-loop (`mud-skill` combat procedure).
-5. UNKNOWN â€” Optimal primaries and quest gear â€” character-specific.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/) guild docs, `docs/skill-harvest-log.md`
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

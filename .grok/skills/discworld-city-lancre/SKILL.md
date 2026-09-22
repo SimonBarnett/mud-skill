@@ -1,31 +1,33 @@
-﻿---
+---
 name: discworld-city-lancre
 description: >
-  Discworld MUD city and region guide for Lancre and the Ramtops: location, lore, witch themes. Use for Lancre, Ramtops.
+  Discworld MUD Lancre and Ramtops: witch country, Lancre currency, carriage route.
+  Does not stamp ready for human UAT.
 ---
 
 # Lancre and Ramtops (city guide)
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location, lore** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location, lore** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Lancre
+- https://dwwiki.mooo.com/wiki/Carriages
+- https://dwwiki.mooo.com/wiki/Carriages#Lancre_Kingdom
 
 ## LOCKED
 
-- Lancre region ties to witch and countryside themes from public Discworld MUD docs.
-- Travel between areas follows in-game exits and conveyance shown to the player.
-- Human-in-the-loop before long wilderness hunts.
+1. LOCKED — Lancre Kingdom is a Ramtops monarchy; **Lancre Town** is a key hub (wiki Lancre).
+2. LOCKED — Spend **Lancre coins** (base-12 ladder in `discworld-money-currency`); change AM dollars before Ramtops shopping.
+3. LOCKED — **Lancre Kingdom carriage** loop includes Mad Stoat, Brass Neck, **Bad Ass**, Slippery Hollow, Razorback, Slice, Creel Springs, Mad Wolf, Blackglass, Lancre Town — route allows `leave carriage at <stop>` (wiki Carriages).
+4. LOCKED — Witch guild paths reference Lancre / Bad Ass (`discworld-mud` witch playbook); human OK before wilderness hunts.
 
 ## UNKNOWN
 
-- Exact guildhouses and shop names  - read from game.
+- Every Lancre village shop name — Kefka DB has entries but no curated wiki list on https://dwwiki.mooo.com/wiki/Lancre (one-line page only).
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Confirm human intent and connection (`mud-skill`); pay in **local currency** (`discworld-money-currency`).
-2. LOCKED â€” Reach lancre using **carriages** or walking exits shown in game (`discworld-travel-transport`).
-3. LOCKED â€” `look` each room; log exits â€” no invented ENAMEs.
-4. LOCKED â€” Shops and guilds: verify NPC names in room text; see `discworld-shop-*` leaflets.
-5. UNKNOWN â€” Live quest gates and NPC positions â€” session-specific.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/), [Travel wiki](https://dwwiki.mooo.com/wiki/Travel)
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

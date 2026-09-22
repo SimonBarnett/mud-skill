@@ -1,31 +1,32 @@
-﻿---
+---
 name: discworld-fight-tactics
 description: >
-  Discworld MUD fighting guide: tactics, combat options, attitude.
+  Discworld MUD fighting guide: tactics and options.
+  Does not stamp ready for human UAT.
 ---
 
 # Tactics and options
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **fight** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **fight** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fhelpdir%2Ftactics
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Ftaskmaster
 
 ## LOCKED
 
-- `options combat` and `tactics` adjust combat attitude (public help).
-- Match tactics to weapon type and guild (warrior vs thief).
-- Human OK before switching to aggressive tactics in cities.
+1. LOCKED — `tactics` and `options combat` adjust attitude (helpdir tactics).
+2. LOCKED — Match tactics to weapon type and guild.
+3. LOCKED — Human OK before aggressive tactics in cities.
+4. LOCKED — Revisit after weapon change.
 
 ## UNKNOWN
 
-- Best tactic per boss  - encounter-specific.
+- Boss tactic presets — encounter-specific.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Human OK before lethal fights; parse targets from game text.
-2. LOCKED â€” Use `consider`, `wimpy`, `flee` as appropriate (sibling fight leaflets).
-3. LOCKED â€” Improve fighting via TM + guild `advance` (`discworld-skills-experience`).
-4. LOCKED â€” Newbie practice: Greg area when relevant (`discworld-fight-newbie-greg`).
-5. UNKNOWN â€” Boss tactics â€” encounter-specific.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/) combat help, [taskmaster](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Ftaskmaster)
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

@@ -1,30 +1,33 @@
-﻿---
+---
 name: discworld-city-uberwald
 description: >
-  Discworld MUD region guide for Uberwald: vampires, werewolves, location lore.
+  Discworld MUD Uberwald region: Escrow, undead themes, Uberwald carriage.
+  Does not stamp ready for human UAT.
 ---
 
 # Uberwald (region guide)
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location, lore** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location, lore** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Uberwald
+- https://dwwiki.mooo.com/wiki/Carriages
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Fnationality
 
 ## LOCKED
 
-- Uberwald is the Disc's Eastern Europe analogue with undead themes; MUD has Uberwald areas (public docs).
-- Night travel and supernatural NPCs warrant caution and human OK for combat.
+1. LOCKED — **Uberwaldian** nationality starts **Escrow** with Lancre currency and Uberwaldean (nationality doc).
+2. LOCKED — **Uberwald carriage** / Vieux River / Steppes routes on wiki Carriages (Escrow, Bonk, Koom Gorge, etc.).
+3. LOCKED — Vampire/werewolf themes — night travel and supernatural NPCs warrant caution + human OK for combat.
+4. LOCKED — Lancre money changers buy/sell vs AM at listed spreads (`discworld-money-currency`).
 
 ## UNKNOWN
 
-- Castle and clan quest lines  - spoiler-sensitive; harvest in session.
+- Castle clan quest lines — spoiler; wiki Uberwald quest section not harvested.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Confirm human intent and connection (`mud-skill`); pay in **local currency** (`discworld-money-currency`).
-2. LOCKED â€” Reach uberwald using **carriages** or walking exits shown in game (`discworld-travel-transport`).
-3. LOCKED â€” `look` each room; log exits â€” no invented ENAMEs.
-4. LOCKED â€” Shops and guilds: verify NPC names in room text; see `discworld-shop-*` leaflets.
-5. UNKNOWN â€” Live quest gates and NPC positions â€” session-specific.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/), [Travel wiki](https://dwwiki.mooo.com/wiki/Travel)
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

@@ -1,8 +1,8 @@
 ﻿---
 name: discworld-shop-pawn-trade
 description: >
-  Discworld MUD pawn, trade, and fencing loot: sell mundane gear, thief fences.
-  Use when the user says DW pawn, fence loot, sell sword, or
+  Discworld MUD pawn, reclaim, fences, and selling loot.
+  Use when the user says DW pawn, Follatt Biraten, reclaim receipt, or
   /discworld-shop-pawn-trade.
   Does not stamp ready for human UAT.
 ---
@@ -10,37 +10,45 @@ description: >
 # Pawn and trade
 
 Companion to `mud-skill` and `discworld-guild-thief`.
-Surfaces: **shop** (#23, #26).
+Surfaces: **shop** (#23, #26 FIX).
 
 **Sources (link-out):**
 
-- [Discworld MUD wiki](https://discworld.starturtle.net/) — trade/pawn topics
-- Thief guild newbie material (legal fencing themes)
-- [Kefka item DB](https://dw.daftjunk.com/items/index.php) — pawn shop entries
+- [Pawn shop room help](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Froom%2Fpawn_shop)
+- [Fence command](http://discworld.atuin.net/lpc/playing/documentation.c?path=%2Fknown_command%2Ffence)
+- [Making money — fences vs general stores](https://dwwiki.mooo.com/wiki/Making_money)
+- [Quow NPC record — Follatt Biraten](https://quow.co.uk/cow.php?a=npc&n=1_Follatt+Biraten&s=Georgio)
+- [Player DB example — long sword at Follatt Biraten's pawn shop](https://git.atr0phy.net/binaryatrocity/discworld-tintin/src/branch/master) (item index text)
 
-## LOCKED — Selling mundane loot
+## LOCKED — Pawn shop (named example)
 
-1. Identify **pawn / general trader** NPCs from room text in the current city.
-2. `sell` only items the human confirms are **non-quest, non-unique**.
-3. Prices vary by city and shop — compare before selling high-value gear.
-4. Currency paid is **local**; exchange later if needed (`discworld-money-currency`).
+| Shop | Location | Evidence |
+|------|----------|----------|
+| **Follatt Biraten's pawn shop** | **Ankh-Morpork** (public DB lists shop name; **street not in Kefka/Quow harvest**) | Quow NPC location string; TinTin DB lists items (e.g. long sword A$3) sold there |
 
-## LOCKED — Thieves' Guild fencing
+**Pawn workflow** (pawn_shop help):
 
-- Stolen goods and guild rules use **game-identified fences** (public thief
-  orientation) — illegal theft from players needs human approval (`mud-skill` combat gate).
-- Do not fence items flagged unique in `look` or quest journals.
+1. `pawn <item>` — receive cash + **Pawned Item Receipt** (do not lose receipt).
+2. `reclaim receipt` at the **same** shop before expiry; pay loan + ~20% fee (shown in shop).
+3. Expired stock appears for `list` / `browse` / `buy` — pawn shops do not `sell` buy from players.
 
-## LOCKED — Player trade
+## LOCKED — Fences (thief economy)
 
-- Direct `give` / trade with players — human-in-the-loop; no scamming unique items.
-- Player shops may host **money changers** with limited float (wiki).
+- NPC **fence** command — better prices than general stores for many items (`/doc/known_command/fence`).
+- Some fences publish **wanted items** lists (thief-only visibility per help).
+- Human OK before fencing stolen-from-player loot.
+
+## LOCKED — General resale
+
+- **Caveat Emptorium**, **Trotters Lane** — junk/bric-a-brac fixed stock (Kefka shop 728); buy oddments, not a pawn mechanic.
+- Compare fence vs general store when not in a hurry (`Making money` wiki).
 
 ## UNKNOWN
 
-- Best sell price route for a given item — economy shifts; check multiple buyers.
+- **Street address** for Follatt Biraten's — searched Kefka index + Quow; only shop name + city locked (gap cite above).
+- Every pawn shop on Disc — pawn_shop help is generic; additional cities not harvested.
 
 ## Do not
 
-- Sell corpses' quest items without human explicit OK.
+- Sell quest/unique gear without human check.
 - Stamp ready for human UAT.

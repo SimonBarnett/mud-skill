@@ -1,32 +1,36 @@
-﻿---
+---
 name: discworld-guild-warrior
 description: >
-  Discworld MUD warrior guild playbook: fighting, weapons, specialisations. Use for warrior guild, berserker, guard specials.
+  Discworld MUD Warriors' guild playbook leaflet.
+  Does not stamp ready for human UAT.
 ---
 
-# Warriors' Guild
+# Warriors'
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **guild, fight, weapon** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **guild, fight, lore** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fnewbie%2Fwarriors_guild
+- https://discworld.starturtle.net/
+- https://dwwiki.mooo.com/wiki/Guilds
 
 ## LOCKED
 
-- Warriors teach combat skills; specialisation is chosen at join (public `warrior_specialisations` newbie doc).
-- Examples include Palace Guard and Weapon Masters' Court in AM, Djelian Guard, Samurai, Lancre Highland Regiment (link-out in `discworld-mud`).
-- Train at guild teachers shown in game; `skills fighting` lists primaries.
-- Greg newbie combat area is public FAQ practice (see `discworld-fight-newbie-greg`).
+1. LOCKED — Read in-game `/doc/newbie/warriors_guild` and guild help before join (starturtle URL above).
+2. LOCKED — Human confirms guild join — resign is painful; load `discworld-mud` class table.
+3. LOCKED — Train via `advance` in guild advance rooms and TM (`discworld-skills-experience`); ask before big XP spends.
+4. LOCKED — Combat and theft default human-in-the-loop (`mud-skill` combat gate).
+5. LOCKED — Specialisation chosen at join — read `warrior_specialisations` doc.
+6. LOCKED — Greg newbie combat (`discworld-fight-newbie-greg`); primaries follow spec.
+7. LOCKED — Full numbered playbook in `discworld-mud` warrior section.
 
 ## UNKNOWN
 
-- Optimal weapon pairs per spec  - character-specific.
+- Optimal weapon pair per spec — character build.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Human confirms guild join; read in-game `/doc/newbie/warrior_guild` or equivalent help on [https://discworld.starturtle.net/](https://discworld.starturtle.net/).
-2. LOCKED â€” Class playbooks in `discworld-mud` for warrior/witch; others use this leaflet + game teachers.
-3. LOCKED â€” Advance skills in guild rooms (`discworld-skills-experience`); ask before large `advance` spends.
-4. LOCKED â€” Combat defaults human-in-the-loop (`mud-skill` combat procedure).
-5. UNKNOWN â€” Optimal primaries and quest gear â€” character-specific.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/) guild docs, `docs/skill-harvest-log.md`
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

@@ -1,31 +1,33 @@
-﻿---
+---
 name: discworld-city-djelibeybi
 description: >
-  Discworld MUD city guide for Djelibeybi: location, desert lore, warrior guard themes.
+  Discworld MUD city guide for Djelibeybi: desert, Djelian guard, DjToon currency.
+  Does not stamp ready for human UAT.
 ---
 
 # Djelibeybi (city guide)
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location, lore** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location, lore** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Djelibeybi
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fnewbie%2Fwarrior_specialisations
+- https://dwwiki.mooo.com/wiki/Carriages
 
 ## LOCKED
 
-- Djelibeybi is a desert kingdom on the Disc with public MUD coverage (wiki orientation).
-- Warrior specialisation Djelian Guard is named in public warrior newbie docs.
-- Respect heat, water, and NPC law cues from game text.
+1. LOCKED — Desert kingdom; public warrior docs name **Djelian Guard** specialisation tied to this region.
+2. LOCKED — Nationality help groups Djelian / Klatchian / Tsortian / Howondalandish starts with **Djelian currency** and Djelian language (`discworld-character-creation`).
+3. LOCKED — **Djelibeybi carriage** route on wiki Travel matrix; board at marked stops only.
+4. LOCKED — Heat and NPC law cues from room text; `consider` before combat in desert outskirts.
 
 ## UNKNOWN
 
-- Shop stock and temple layouts  - in-game only.
+- Temple and palace room graph — not in harvested wiki summary (https://dwwiki.mooo.com/wiki/Djelibeybi stub); discover in-game.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Confirm human intent and connection (`mud-skill`); pay in **local currency** (`discworld-money-currency`).
-2. LOCKED â€” Reach djelibeybi using **carriages** or walking exits shown in game (`discworld-travel-transport`).
-3. LOCKED â€” `look` each room; log exits â€” no invented ENAMEs.
-4. LOCKED â€” Shops and guilds: verify NPC names in room text; see `discworld-shop-*` leaflets.
-5. UNKNOWN â€” Live quest gates and NPC positions â€” session-specific.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/), [Travel wiki](https://dwwiki.mooo.com/wiki/Travel)
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

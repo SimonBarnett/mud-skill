@@ -1,30 +1,32 @@
-﻿---
+---
 name: discworld-location-am-sewers
 description: >
-  Discworld MUD location guide: Ankh-Morpork sewers  - high risk location.
+  Discworld MUD Ankh-Morpork sewers — high risk.
+  Does not stamp ready for human UAT.
 ---
 
 # AM sewers (location)
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **location, city, fight** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **location, city, fight** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Ankh-Morpork
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fhelpdir%2Fwimpy
 
 ## LOCKED
 
-- Sewers are dangerous; avoid in first 10 minutes (`discworld-ankh-survival`).
-- Bring light, wimpy, and escape route if human orders sewer run.
+1. LOCKED — Sewers are dangerous; **avoid first 10 minutes** in AM (`discworld-ankh-survival`).
+2. LOCKED — Bring light, set `wimpy`, plan flee exits before human orders sewer run.
+3. LOCKED — Corpse recovery hard in isolated tiles — `discworld-death-recovery`.
+4. LOCKED — Monster tiers vary — `consider` each new NPC type.
 
 ## UNKNOWN
 
-- Monster levels and quest nodes  - live.
+- Full sewer graph — not in public wiki summary; discover with human OK.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Pair with city leaflet (`discworld-city-*`) and `discworld-ankh-survival` if in AM.
-2. LOCKED â€” Navigate by game exits only; note lit vs dark and one-way doors.
-3. LOCKED â€” Before combat here, `consider` and set `wimpy` (`discworld-fight-*`).
-4. LOCKED â€” Death risk: know corpse recovery (`discworld-death-recovery`).
-5. UNKNOWN â€” Hidden exits and quest locks â€” discover in play.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/) room/area pages
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

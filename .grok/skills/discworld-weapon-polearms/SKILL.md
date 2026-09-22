@@ -1,29 +1,32 @@
-﻿---
+---
 name: discworld-weapon-polearms
 description: >
-  Discworld MUD weapon guide: polearms, spears, halberds.
+  Discworld MUD polearms and spears.
+  Does not stamp ready for human UAT.
 ---
 
 # Polearms
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **weapon, fight** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **weapon, fight** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Polearms
+- https://dwwiki.mooo.com/wiki/Weapons
 
 ## LOCKED
 
-- Polearms include spears and halberds per weapon help.
-- Reach weapons suit some warrior specs (UNKNOWN per build).
+1. LOCKED — Polearms include spears/halberds (wiki Polearms table).
+2. LOCKED — Spears sold at AM weapon emporia (e.g. Tenth Egg list in Kefka).
+3. LOCKED — Reach weapons — tactics interaction per helpdir tactics.
+4. LOCKED — Check skill requirements on item before buy.
 
 ## UNKNOWN
 
-- Shop availability by city  - confirm locally.
+- Shop availability outside AM — confirm via Kefka city filter.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Buy weapons/armour from named shops (`discworld-shop-weapons`, `discworld-shop-armour`).
-2. LOCKED â€” Match weapon type to `skills fighting` tree; check burden (`discworld-weapon-armour-encumbrance`).
-3. LOCKED â€” `judge` / `vurdere` when you have evaluating skills (wiki weapons/armour pages).
-4. UNKNOWN â€” Best weapon for your spec â€” build-specific.
-
-**Sources:** [Weapons wiki](https://dwwiki.mooo.com/wiki/Weapons), [Armours wiki](https://dwwiki.mooo.com/wiki/Armours)
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

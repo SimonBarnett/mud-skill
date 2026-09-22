@@ -1,30 +1,33 @@
-﻿---
+---
 name: discworld-city-ephebe
 description: >
-  Discworld MUD city guide for Ephebe: location, philosopher and desert coast lore.
+  Discworld MUD city guide for Ephebe: philosophers, Ephebian currency, Il Drim starts.
+  Does not stamp ready for human UAT.
 ---
 
 # Ephebe (city guide)
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location, lore** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location, lore** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Ephebe
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Fnationality
+- https://dwwiki.mooo.com/wiki/Travel
 
 ## LOCKED
 
-- Ephebe is the Disc's philosopher city (Greek parody); appears in MUD geography (wiki).
-- Ask human before PvP or theft in foreign cities.
+1. LOCKED — Philosopher-city parody; **Istanzian** and **Omnian** nationalities start **Il Drim** with Ephebian money per nationality doc.
+2. LOCKED — Harbour Market and sea routes appear on wiki Travel / carriage tables (e.g. swordfish stall Ephebe in player DB examples).
+3. LOCKED — Money changers quote Ephebian `de` rates vs AM on wiki Money changer tables (`discworld-money-currency`).
+4. LOCKED — Ask human before theft/PvP in foreign cities (public etiquette guides).
 
 ## UNKNOWN
 
-- Temple and arena details  - in-game.
+- Arena and temple quest NPC coordinates — wiki Ephebe page has no full street shop index (cited gap).
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Confirm human intent and connection (`mud-skill`); pay in **local currency** (`discworld-money-currency`).
-2. LOCKED â€” Reach ephebe using **carriages** or walking exits shown in game (`discworld-travel-transport`).
-3. LOCKED â€” `look` each room; log exits â€” no invented ENAMEs.
-4. LOCKED â€” Shops and guilds: verify NPC names in room text; see `discworld-shop-*` leaflets.
-5. UNKNOWN â€” Live quest gates and NPC positions â€” session-specific.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/), [Travel wiki](https://dwwiki.mooo.com/wiki/Travel)
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

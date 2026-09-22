@@ -1,30 +1,33 @@
-﻿---
+---
 name: discworld-city-bes-pelargic
 description: >
-  Discworld MUD city guide for Bes Pelargic and Agatean themes: location, lore.
+  Discworld MUD city guide for Bes Pelargic and Agatean themes.
+  Does not stamp ready for human UAT.
 ---
 
 # Bes Pelargic (city guide)
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location, lore** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location, lore** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Bes_Pelargic
+- https://dwwiki.mooo.com/wiki/Travel
+- http://dwmud.pbworks.com/w/page/18434040/Currencies
 
 ## LOCKED
 
-- Bes Pelargic is the Agatean empire port/city area on Discworld MUD (public wiki pages).
-- Long-distance travel may need human-approved time and supplies.
+1. LOCKED — Bes Pelargic (Agatean Empire port) uses **Agatean currency** (Rh/s notation in public guides); converting to AM dollars is awkward — plan spending or use guild/house payments that accept any currency (pbworks currencies page).
+2. LOCKED — Intercontinental carriage routes link AM to BP-facing stops (wiki Travel table); use coloured stop notes and `enter carriage` (`discworld-travel-transport`).
+3. LOCKED — Morporkian nationality does **not** start here; long ocean/carriage legs need human OK while fragile.
+4. LOCKED — `look` room text for exits; Bes maps on Kefka (`dw.daftjunk.com`) — do not memorise speedwalks as LOCKED.
 
 ## UNKNOWN
 
-- Local guild access and visa/quest gates  - game text only.
+- Per-street shop catalogue for current BP — Kefka DB searchable by city; no single wiki table copied here (gap: https://dwwiki.mooo.com/wiki/Bes_Pelargic lacks shop list section).
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Confirm human intent and connection (`mud-skill`); pay in **local currency** (`discworld-money-currency`).
-2. LOCKED â€” Reach bes pelargic using **carriages** or walking exits shown in game (`discworld-travel-transport`).
-3. LOCKED â€” `look` each room; log exits â€” no invented ENAMEs.
-4. LOCKED â€” Shops and guilds: verify NPC names in room text; see `discworld-shop-*` leaflets.
-5. UNKNOWN â€” Live quest gates and NPC positions â€” session-specific.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/), [Travel wiki](https://dwwiki.mooo.com/wiki/Travel)
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

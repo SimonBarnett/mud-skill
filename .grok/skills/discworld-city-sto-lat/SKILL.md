@@ -1,30 +1,32 @@
-﻿---
+---
 name: discworld-city-sto-lat
 description: >
-  Discworld MUD city guide for Sto Lat: location, nearby Sto Plains travel.
+  Discworld MUD city guide for Sto Lat on the Sto Plains.
+  Does not stamp ready for human UAT.
 ---
 
 # Sto Lat (city guide)
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Sto_Lat
+- https://dwwiki.mooo.com/wiki/Travel
 
 ## LOCKED
 
-- Sto Lat is a stoic plains city near Ankh-Morpork in canon; playable on the MUD (wiki).
-- Good mid-game hub for some guild errands per public guides.
+1. LOCKED — Sto Lat sits on Sto Plains near AM; wiki Travel marks **Sto Lat** on several carriage rows (Mail / intercity).
+2. LOCKED — Uses **AM currency** on Sto Plains per currency wiki; short carriage hops from AM possible.
+3. LOCKED — Mid-game errands reference Sto Lat in player guides — confirm quest text before travel.
+4. LOCKED — `discworld-ankh-survival` not required here; still use `wimpy` in unfamiliar plains.
 
 ## UNKNOWN
 
-- Exact distance routes and tolls  - from game.
+- Complete Sto Lat shop index — not published on dwwiki Sto Lat stub page.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Confirm human intent and connection (`mud-skill`); pay in **local currency** (`discworld-money-currency`).
-2. LOCKED â€” Reach sto lat using **carriages** or walking exits shown in game (`discworld-travel-transport`).
-3. LOCKED â€” `look` each room; log exits â€” no invented ENAMEs.
-4. LOCKED â€” Shops and guilds: verify NPC names in room text; see `discworld-shop-*` leaflets.
-5. UNKNOWN â€” Live quest gates and NPC positions â€” session-specific.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/), [Travel wiki](https://dwwiki.mooo.com/wiki/Travel)
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

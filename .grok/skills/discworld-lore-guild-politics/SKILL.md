@@ -1,29 +1,32 @@
-﻿---
+---
 name: discworld-lore-guild-politics
 description: >
-  Discworld MUD lore guide: guild rivalry, city law, watch.
+  Discworld MUD guild politics, Watch, and city law.
+  Does not stamp ready for human UAT.
 ---
 
 # Guild politics and law (lore)
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **lore, guild, city** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **lore, guild, city** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- http://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Fankh-morpork
+- https://dwwiki.mooo.com/wiki/Ankh-Morpork
 
 ## LOCKED
 
-- Ankh-Morpork has Watch and guild legal structures in canon.
-- Illegal acts risk guards and fines  - heed game messages.
+1. LOCKED — AM has Watch and licensed Thieves' Guild in canon; illegal theft risks fines/jail.
+2. LOCKED — Heed guard warnings in game text before continuing crime.
+3. LOCKED — Assassin contracts are lethal PvP — human must approve.
+4. LOCKED — Player org politics are live — not documented in static help.
 
 ## UNKNOWN
 
-- Player org politics  - live server.
+- Patrician questline state — session-specific.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Use lore for **tone and roleplay**, not invented puzzle solutions.
-2. LOCKED â€” Mechanics (death, gods, races) â€” cross-check concept docs on [https://discworld.starturtle.net/](https://discworld.starturtle.net/).
-3. LOCKED â€” Character creation facts: `discworld-character-creation` + `discworld-lore-races-species`.
-4. UNKNOWN â€” Quest spoilers â€” defer to in-game text.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/), [https://www.discworldmud.org/](https://www.discworldmud.org/)
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

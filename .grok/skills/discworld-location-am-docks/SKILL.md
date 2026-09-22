@@ -1,30 +1,32 @@
-﻿---
+---
 name: discworld-location-am-docks
 description: >
-  Discworld MUD location guide: Ankh-Morpork docks and sea travel.
+  Discworld MUD Ankh-Morpork docks and sea travel.
+  Does not stamp ready for human UAT.
 ---
 
 # AM docks (location)
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **location, city** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **location, city** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Ankh-Morpork
+- https://dw.daftjunk.com/items/index.php?item=145&shop=724
 
 ## LOCKED
 
-- Docks connect to sea travel and smuggling themes in canon.
-- Human OK before boarding ships or entering dangerous waterfront rooms.
+1. LOCKED — **Kedger Street** hosts a seedy dockside shop (Kefka shop 724) selling sailor gear — example waterfront commerce.
+2. LOCKED — Docks tie to sea smuggling themes; human OK before boarding ships or isolated waterfront rooms.
+3. LOCKED — Pair with `discworld-city-ankh-morpork` and `discworld-ankh-survival` when leaving lit streets.
+4. LOCKED — Thieves' fence economy may reference dock loot — guild rules apply.
 
 ## UNKNOWN
 
-- Sailing schedules  - game text.
+- Sailing schedules and captain names — room text only; dwwiki AM page has no schedule table.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Pair with city leaflet (`discworld-city-*`) and `discworld-ankh-survival` if in AM.
-2. LOCKED â€” Navigate by game exits only; note lit vs dark and one-way doors.
-3. LOCKED â€” Before combat here, `consider` and set `wimpy` (`discworld-fight-*`).
-4. LOCKED â€” Death risk: know corpse recovery (`discworld-death-recovery`).
-5. UNKNOWN â€” Hidden exits and quest locks â€” discover in play.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/) room/area pages
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

@@ -1,29 +1,32 @@
-﻿---
+---
 name: discworld-weapon-axes
 description: >
-  Discworld MUD weapon guide: axes and heavy blades.
+  Discworld MUD axes and heavy blades.
+  Does not stamp ready for human UAT.
 ---
 
 # Axes
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **weapon, fight** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **weapon, fight** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Axes
+- https://dwwiki.mooo.com/wiki/Weapons
 
 ## LOCKED
 
-- Axes use axe skills; often warrior-favoured in public guides.
-- Two-handed vs one-handed affects tactics and shield use.
+1. LOCKED — Axe skills under fighting.melee; large axes on sale at Kernab's / Elm Forge (Kefka listings).
+2. LOCKED — Two-handed axes affect shield use and tactics.
+3. LOCKED — Sharp damage type vs armour layers (weapons wiki).
+4. LOCKED — Human OK before expensive two-handed purchase.
 
 ## UNKNOWN
 
-- Named artefact axes  - quest spoilers; in-game.
+- Named artefact axes — quest spoilers.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Buy weapons/armour from named shops (`discworld-shop-weapons`, `discworld-shop-armour`).
-2. LOCKED â€” Match weapon type to `skills fighting` tree; check burden (`discworld-weapon-armour-encumbrance`).
-3. LOCKED â€” `judge` / `vurdere` when you have evaluating skills (wiki weapons/armour pages).
-4. UNKNOWN â€” Best weapon for your spec â€” build-specific.
-
-**Sources:** [Weapons wiki](https://dwwiki.mooo.com/wiki/Weapons), [Armours wiki](https://dwwiki.mooo.com/wiki/Armours)
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).
