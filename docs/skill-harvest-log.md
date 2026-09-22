@@ -106,3 +106,15 @@ URLs). Filled shop leaflets **general / pawn / magic** with named AM shops + loc
 Removed deprecated expand script.
 
 MRB #29 blockers addressed; re-hand MRB on new SHA. No UAT stamp.
+
+## 2026-09-22 — playtest front door (issues #33 #34)
+
+Live guest login on published Discworld port 4242, stopped at the terms
+screen. Harvest is the menu, the four guest prompts, the 30 second wait,
+name-banishment, and name-collision. No in-world room was seen, so city,
+guild, fight, shop, and travel leaflets were not extended.
+
+Source: https://discworld.starturtle.net/lpc/playing/getting_started.html
+plus the session recorded on issue #33.
+
+Workers do not stamp UAT.
