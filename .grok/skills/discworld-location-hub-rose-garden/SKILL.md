@@ -1,30 +1,32 @@
-﻿---
+---
 name: discworld-location-hub-rose-garden
 description: >
-  Discworld MUD location guide: central hubs, rose garden, meeting spots.
+  Discworld MUD rose garden and player meeting hubs.
+  Does not stamp ready for human UAT.
 ---
 
 # Hubs and rose garden (location)
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **location, lore** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **location, lore** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Rose_garden
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Ffaq
 
 ## LOCKED
 
-- Players meet at known hubs; rose garden is a common reference on wiki for orientation.
-- Good place to ask newbie questions if human approves channels.
+1. LOCKED — Rose garden is a common **player meeting** reference on wiki (orientation, not a shop).
+2. LOCKED — Good place for approved newbie questions — human controls channel spam.
+3. LOCKED — Not a substitute for guild advance rooms or shops.
+4. LOCKED — Log meeting location from game text if helping a corpse recovery (`discworld-death-recovery`).
 
 ## UNKNOWN
 
-- Current player gatherings  - live.
+- Live player gatherings — session-specific.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Pair with city leaflet (`discworld-city-*`) and `discworld-ankh-survival` if in AM.
-2. LOCKED â€” Navigate by game exits only; note lit vs dark and one-way doors.
-3. LOCKED â€” Before combat here, `consider` and set `wimpy` (`discworld-fight-*`).
-4. LOCKED â€” Death risk: know corpse recovery (`discworld-death-recovery`).
-5. UNKNOWN â€” Hidden exits and quest locks â€” discover in play.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/) room/area pages
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

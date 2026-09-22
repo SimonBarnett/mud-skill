@@ -1,8 +1,8 @@
 ﻿---
 name: discworld-shop-magic-components
 description: >
-  Discworld MUD magic component and herb shops for wizards and witches.
-  Use when the user says DW components, herb shop, witch supplies, or
+  Discworld MUD magic components: Tarnach's, Alchemists' Guild, components command.
+  Use when the user says DW spell components, Tarnach, wizard supplies AM, or
   /discworld-shop-magic-components.
   Does not stamp ready for human UAT.
 ---
@@ -10,41 +10,40 @@ description: >
 # Magic and component shops
 
 Companion to `discworld-guild-wizard`, `discworld-guild-witch`, and `discworld-mud`.
-Surfaces: **shop, guild, lore** (#23, #26).
+Surfaces: **shop, guild, lore** (#23, #26 FIX).
 
 **Sources (link-out):**
 
-- Guild newbie docs on [witches](http://discworld.atuin.net/lpc/playing/documentation.c?path=%2Fnewbie%2Fwitches_guild) and wizard library material (wiki)
-- [Discworld MUD wiki](https://discworld.starturtle.net/) — component/herb pages
-- [Kefka item DB](https://dw.daftjunk.com/items/index.php) — search herbs/components
+- [Tarnach's Quality Consumables (wiki)](https://dwwiki.mooo.com/wiki/Tarnach%27s_Quality_Consumables)
+- [components command](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fhelpdir%2Fcomponents)
+- [Category: Spell components](https://dwwiki.mooo.com/wiki/Components)
+- [Alchemists' Guild supply shop (Kefka)](https://dw.daftjunk.com/items/index.php?item=3465&shop=544)
+- [Making money — Tarnach job note](https://dwwiki.mooo.com/wiki/Making_money)
 
-## LOCKED — Wizards
+## LOCKED — Named shops
 
-- Spells and rituals consume **components** listed in spell help — buy from
-  appropriate **magic shops** and UU-adjacent vendors when game text directs
-  (`discworld-location-am-unseen-university`).
-- Human OK before bulk purchases or stealing components.
+| Shop | Location (public text) | Stock notes |
+|------|------------------------|-------------|
+| **Tarnach's Quality Consumables** | **Magical Emporium**, **Sator Square**, Ankh-Morpork — north-east corner, **second level** (go east, up, northeast from emporium entrance per wiki) | Player-maintained component shop: candles, carrots, feathers, eyes, sap, torches, pebbles, purple mineral powder, etc. (wiki stocked list) |
+| **Guild of Alchemists' supply shop** | **Alchemists' Guild**, **Street of Alchemists**, Ankh-Morpork | Sap, sulphur, purple mineral nugget, mandrake jar, lab gear (Kefka shop 544) |
 
-## LOCKED — Witches
+## LOCKED — Casting workflow
 
-- Herbs support **brew**, **imbue**, and healing commands (witch playbook in
-  `discworld-mud`).
-- **`gather`** may supplement shops (in-game help) — human approves wilderness
-  gathering in dangerous zones.
+1. `components for <spell>` — lists required items (helpdir components); must know spell.
+2. Component pouch identification for casting from pouches.
+3. Witches use herbs/`gather` plus shops (`discworld-mud` witch playbook) — different economy from wizard slots.
+4. Human OK before bulk purchases or illegal reagent farming.
 
-## LOCKED — Workflow
+## LOCKED — Ramtops note
 
-1. Read spell/recipe help for required component names **from game**.
-2. Buy only what the room lists; check regional currency.
-3. Store components in secure containers — do not sell via pawn by mistake
-   (`discworld-shop-pawn-trade`).
+- **Magic and Meddlers' Shop** in **House of Magic**, Creel Springs (Lancre) — wiki lists carrots, mineral nuggets, etc.; non-wizards need climbing gear/skills to reach upper shop.
 
 ## UNKNOWN
 
-- Complete per-city herb shop map — harvest per trip; wiki partial.
-- Rare quest components — spoiler-sensitive.
+- Live Tarnach player-shop stock — varies with player restocking (wiki warns list is not comprehensive).
+- Every herb shop for witches outside AM/Lancre — harvest per trip.
 
 ## Do not
 
-- Invent component ENAMEs for casting.
+- Invent component ENAMEs not shown in `components` output.
 - Stamp ready for human UAT.

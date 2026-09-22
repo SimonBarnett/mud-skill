@@ -1,30 +1,32 @@
-﻿---
+---
 name: discworld-weapon-swords
 description: >
-  Discworld MUD weapon guide: swords and fencing skills, shops.
+  Discworld MUD swords and fencing skills.
+  Does not stamp ready for human UAT.
 ---
 
 # Swords
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **weapon, shop, fight** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **weapon, shop, fight** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Swords
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fhelpdir%2Fjudge
 
 ## LOCKED
 
-- Sword-family weapons use sword/fencing skills (public weapon help).
-- Buy from weapon shops identified in game (`discworld-shop-weapons`).
-- Weight affects combat  - check encumbrance (`discworld-weapon-armour-encumbrance`).
+1. LOCKED — Sword family uses `fighting.melee.sword` / fencing subtree (wiki Swords).
+2. LOCKED — Buy from named AM shops in `discworld-shop-weapons` (Tenth Egg, Treacle, Elm).
+3. LOCKED — `judge` weapon quality needs `adventuring.evaluating.weapons` 5+ (weapons wiki).
+4. LOCKED — Weight affects burden (`discworld-weapon-armour-encumbrance`).
 
 ## UNKNOWN
 
-- Best sword per spec  - character build.
+- Best sword per warrior spec — build-specific.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Buy weapons/armour from named shops (`discworld-shop-weapons`, `discworld-shop-armour`).
-2. LOCKED â€” Match weapon type to `skills fighting` tree; check burden (`discworld-weapon-armour-encumbrance`).
-3. LOCKED â€” `judge` / `vurdere` when you have evaluating skills (wiki weapons/armour pages).
-4. UNKNOWN â€” Best weapon for your spec â€” build-specific.
-
-**Sources:** [Weapons wiki](https://dwwiki.mooo.com/wiki/Weapons), [Armours wiki](https://dwwiki.mooo.com/wiki/Armours)
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

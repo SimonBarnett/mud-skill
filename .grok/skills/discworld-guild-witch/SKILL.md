@@ -1,31 +1,36 @@
-﻿---
+---
 name: discworld-guild-witch
 description: >
-  Discworld MUD witch guild: herbs, headology, flying. Use for witch guild, female character join rules.
+  Discworld MUD Witches' guild playbook leaflet.
+  Does not stamp ready for human UAT.
 ---
 
-# Witches' Guild
+# Witches'
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **guild, lore, fight** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **guild, fight, lore** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fnewbie%2Fwitches_guild
+- https://discworld.starturtle.net/
+- https://dwwiki.mooo.com/wiki/Guilds
 
 ## LOCKED
 
-- Witch magic is herbs, cursing, flying, headology  - not wizard slots (public witches_guild doc).
-- Public guild description: female characters only for join.
-- See expanded steps in `discworld-mud` witch playbook.
+1. LOCKED — Read in-game `/doc/newbie/witches_guild` and guild help before join (starturtle URL above).
+2. LOCKED — Human confirms guild join — resign is painful; load `discworld-mud` class table.
+3. LOCKED — Train via `advance` in guild advance rooms and TM (`discworld-skills-experience`); ask before big XP spends.
+4. LOCKED — Combat and theft default human-in-the-loop (`mud-skill` combat gate).
+5. LOCKED — Female characters only for join (witches_guild); herbs, headology, broom flight.
+6. LOCKED — Join NPCs Granny Weatherwax / Ogg-San named in newbie doc — follow signs from AM via Gennie Applebottom hint.
+7. LOCKED — Expanded steps in `discworld-mud` witch playbook.
 
 ## UNKNOWN
 
-- Coven and mentor routes  - harvest per character.
+- Fruitbat / tea recipe economy — player preference.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Human confirms guild join; read in-game `/doc/newbie/witch_guild` or equivalent help on [https://discworld.starturtle.net/](https://discworld.starturtle.net/).
-2. LOCKED â€” Class playbooks in `discworld-mud` for warrior/witch; others use this leaflet + game teachers.
-3. LOCKED â€” Advance skills in guild rooms (`discworld-skills-experience`); ask before large `advance` spends.
-4. LOCKED â€” Combat defaults human-in-the-loop (`mud-skill` combat procedure).
-5. UNKNOWN â€” Optimal primaries and quest gear â€” character-specific.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/) guild docs, `docs/skill-harvest-log.md`
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

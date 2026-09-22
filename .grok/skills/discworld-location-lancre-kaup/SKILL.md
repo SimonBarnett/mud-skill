@@ -1,30 +1,32 @@
-﻿---
+---
 name: discworld-location-lancre-kaup
 description: >
-  Discworld MUD location guide: Lancre countryside and Kaup area.
+  Discworld MUD Lancre countryside and Kaup.
+  Does not stamp ready for human UAT.
 ---
 
 # Lancre countryside (location)
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **location, city** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **location, city** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Lancre
+- https://dwwiki.mooo.com/wiki/Carriages
 
 ## LOCKED
 
-- Ramtop countryside has farms, forests, and witch-adjacent zones (wiki).
-- Weather and wilderness combat differ from city.
+1. LOCKED — Ramtop countryside farms/forests between villages; weather differs from AM city.
+2. LOCKED — Reach via **Lancre Kingdom carriage** stops or walking with human-approved supplies.
+3. LOCKED — Witch herb gathering may occur outdoors — `gather` help in-game.
+4. LOCKED — Wilderness combat: `wimpy` + `flee` (`discworld-fight-wimpy-flee`).
 
 ## UNKNOWN
 
-- Hidden paths  - explore with human OK.
+- Hidden paths in Kaup — wiki lacks path graph (Lancre page one paragraph).
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Pair with city leaflet (`discworld-city-*`) and `discworld-ankh-survival` if in AM.
-2. LOCKED â€” Navigate by game exits only; note lit vs dark and one-way doors.
-3. LOCKED â€” Before combat here, `consider` and set `wimpy` (`discworld-fight-*`).
-4. LOCKED â€” Death risk: know corpse recovery (`discworld-death-recovery`).
-5. UNKNOWN â€” Hidden exits and quest locks â€” discover in play.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/) room/area pages
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

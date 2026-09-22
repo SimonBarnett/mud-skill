@@ -1,30 +1,32 @@
-﻿---
+---
 name: discworld-city-pseudopolis
 description: >
-  Discworld MUD city guide for Pseudopolis: location and travel links.
+  Discworld MUD city guide for Pseudopolis.
+  Does not stamp ready for human UAT.
 ---
 
 # Pseudopolis (city guide)
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Pseudopolis
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Ffaq
 
 ## LOCKED
 
-- Pseudopolis is a major Disc city (home of Eric in canon); referenced on MUD wiki.
-- Use umbrella navigate procedure for unfamiliar exits.
+1. LOCKED — Major Disc city in canon; FAQ and wiki reference Pseudopolis as reachable hub.
+2. LOCKED — Use umbrella navigate procedure; carriage links appear on master Travel chart (check stop notes in-game).
+3. LOCKED — Local currency per room prices — change money at changers when leaving Sto Plains (`discworld-money-currency`).
+4. LOCKED — Log exits; do not invent recruiter or shop ENAMEs.
 
 ## UNKNOWN
 
-- Newbie-friendly shops  - confirm live.
+- Newbie-friendly shop roll call — wiki Pseudopolis page lacks shop table (https://dwwiki.mooo.com/wiki/Pseudopolis).
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Confirm human intent and connection (`mud-skill`); pay in **local currency** (`discworld-money-currency`).
-2. LOCKED â€” Reach pseudopolis using **carriages** or walking exits shown in game (`discworld-travel-transport`).
-3. LOCKED â€” `look` each room; log exits â€” no invented ENAMEs.
-4. LOCKED â€” Shops and guilds: verify NPC names in room text; see `discworld-shop-*` leaflets.
-5. UNKNOWN â€” Live quest gates and NPC positions â€” session-specific.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/), [Travel wiki](https://dwwiki.mooo.com/wiki/Travel)
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

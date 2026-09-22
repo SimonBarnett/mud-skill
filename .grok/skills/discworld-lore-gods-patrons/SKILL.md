@@ -1,29 +1,32 @@
-﻿---
+---
 name: discworld-lore-gods-patrons
 description: >
-  Discworld MUD lore guide: gods, priests, patron choice.
+  Discworld MUD gods and priest patrons.
+  Does not stamp ready for human UAT.
 ---
 
 # Gods and patrons (lore)
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **lore, guild** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **lore, guild** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fnewbie%2Fpriests_guild
+- https://dwwiki.mooo.com/wiki/Gods
 
 ## LOCKED
 
-- Many Disc gods exist; priests choose patrons (public priest docs).
-- Temples are city landmarks  - find via game not invented names.
+1. LOCKED — Many Disc gods; priests choose **patron** at join (priests_guild).
+2. LOCKED — Temples are city landmarks — find via game, not invented names.
+3. LOCKED — Rituals consume faith/components per help.
+4. LOCKED — Roleplay respect for divine NPCs.
 
 ## UNKNOWN
 
-- Full god spell trees  - in-game help only.
+- Full god spell trees — in-game help only.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Use lore for **tone and roleplay**, not invented puzzle solutions.
-2. LOCKED â€” Mechanics (death, gods, races) â€” cross-check concept docs on [https://discworld.starturtle.net/](https://discworld.starturtle.net/).
-3. LOCKED â€” Character creation facts: `discworld-character-creation` + `discworld-lore-races-species`.
-4. UNKNOWN â€” Quest spoilers â€” defer to in-game text.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/), [https://www.discworldmud.org/](https://www.discworldmud.org/)
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

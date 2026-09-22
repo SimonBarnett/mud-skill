@@ -1,30 +1,33 @@
-﻿---
+---
 name: discworld-weapon-armour-encumbrance
 description: >
-  Discworld MUD weapon and armour guide: burden, encumbrance, score.
+  Discworld MUD armour burden and encumbrance.
+  Does not stamp ready for human UAT.
 ---
 
 # Armour and encumbrance
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **weapon, fight, shop** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **weapon, fight, shop** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Encumbrance
+- https://dwwiki.mooo.com/wiki/Armours
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fhelpdir%2Fvurdere
 
 ## LOCKED
 
-- Heavy armour and weapons reduce dodge and increase burden (public score/inventory guidance).
-- Balance weapon skill with defence skill training.
-- Repair armour at game-shown smiths or shops.
+1. LOCKED — Heavy armour/weapons increase burden; affects dodge (wiki Encumbrance).
+2. LOCKED — `vurdere` armour; `judge` weapons when skill permits.
+3. LOCKED — Buy armour at Elm Street Forge / Tenth Egg armoury (`discworld-shop-armour`).
+4. LOCKED — Balance weapon skill with defence training.
 
 ## UNKNOWN
 
-- Optimal armour sets  - level-dependent.
+- Optimal armour sets — level-dependent.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Buy weapons/armour from named shops (`discworld-shop-weapons`, `discworld-shop-armour`).
-2. LOCKED â€” Match weapon type to `skills fighting` tree; check burden (`discworld-weapon-armour-encumbrance`).
-3. LOCKED â€” `judge` / `vurdere` when you have evaluating skills (wiki weapons/armour pages).
-4. UNKNOWN â€” Best weapon for your spec â€” build-specific.
-
-**Sources:** [Weapons wiki](https://dwwiki.mooo.com/wiki/Weapons), [Armours wiki](https://dwwiki.mooo.com/wiki/Armours)
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

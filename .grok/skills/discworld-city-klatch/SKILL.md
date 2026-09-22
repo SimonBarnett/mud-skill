@@ -1,30 +1,33 @@
-﻿---
+---
 name: discworld-city-klatch
 description: >
-  Discworld MUD city guide for Klatch and Klatchian areas: location, lore, travel.
+  Discworld MUD city guide for Klatch and Klatchian areas.
+  Does not stamp ready for human UAT.
 ---
 
 # Klatch (city guide)
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location, lore** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **city, location, lore** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://dwwiki.mooo.com/wiki/Klatch
+- https://dwwiki.mooo.com/wiki/Travel
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Fnationality
 
 ## LOCKED
 
-- Klatch is a major Discworld nation with coastal and desert ties in Pratchett canon; MUD has Klatch-facing content (wiki).
-- Use `discworld-mud` for guild choice before cross-continent trips.
+1. LOCKED — Klatchian nationality starts **Djelibeybi area** with Djelian money per nationality help (not a separate Klatch coin at creation).
+2. LOCKED — Wiki Travel marks **Klatch Foreign Legion** and related intercontinental stops — transfer carriages at listed poles.
+3. LOCKED — Desert/coastal themes in Pratchett canon; load `discworld-mud` before cross-continent trips.
+4. LOCKED — Exits from game text only; Klatch city map fragments on dwwiki — verify live.
 
 ## UNKNOWN
 
-- Instance-specific room graph  - never guess.
+- Named Klatch city shop list — dwwiki Klatch page has no comprehensive shop table (gap URL above).
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Confirm human intent and connection (`mud-skill`); pay in **local currency** (`discworld-money-currency`).
-2. LOCKED â€” Reach klatch using **carriages** or walking exits shown in game (`discworld-travel-transport`).
-3. LOCKED â€” `look` each room; log exits â€” no invented ENAMEs.
-4. LOCKED â€” Shops and guilds: verify NPC names in room text; see `discworld-shop-*` leaflets.
-5. UNKNOWN â€” Live quest gates and NPC positions â€” session-specific.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/), [Travel wiki](https://dwwiki.mooo.com/wiki/Travel)
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

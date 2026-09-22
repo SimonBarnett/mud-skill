@@ -1,31 +1,35 @@
-﻿---
+---
 name: discworld-guild-assassin
 description: >
-  Discworld MUD assassin guild: contracts, stealth, Ankh guild school.
+  Discworld MUD Assassins' guild playbook leaflet.
+  Does not stamp ready for human UAT.
 ---
 
-# Assassins' Guild
+# Assassins'
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **guild, fight, lore** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **guild, fight, lore** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fnewbie%2Fassassins_guild
+- https://discworld.starturtle.net/
+- https://dwwiki.mooo.com/wiki/Guilds
 
 ## LOCKED
 
-- Assassins' Guild is in Ankh-Morpork in canon; MUD covers contracts and PvP rules in public docs.
-- Human must approve any player contract or lethal PvP.
-- Stealth and poison skills are guild-taught (game text).
+1. LOCKED — Read in-game `/doc/newbie/assassins_guild` and guild help before join (starturtle URL above).
+2. LOCKED — Human confirms guild join — resign is painful; load `discworld-mud` class table.
+3. LOCKED — Train via `advance` in guild advance rooms and TM (`discworld-skills-experience`); ask before big XP spends.
+4. LOCKED — Combat and theft default human-in-the-loop (`mud-skill` combat gate).
+5. LOCKED — Assassins' Guild centred in AM; contracts and PvP rules in public assassin docs.
+6. LOCKED — Stealth/poison skills guild-taught; crossbows limited for non-assassins (weapon wiki).
 
 ## UNKNOWN
 
-- Contract board procedures  - in-game only.
+- Contract board live procedures — in-game help only (assassins_guild doc does not export board room names).
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Human confirms guild join; read in-game `/doc/newbie/assassin_guild` or equivalent help on [https://discworld.starturtle.net/](https://discworld.starturtle.net/).
-2. LOCKED â€” Class playbooks in `discworld-mud` for warrior/witch; others use this leaflet + game teachers.
-3. LOCKED â€” Advance skills in guild rooms (`discworld-skills-experience`); ask before large `advance` spends.
-4. LOCKED â€” Combat defaults human-in-the-loop (`mud-skill` combat procedure).
-5. UNKNOWN â€” Optimal primaries and quest gear â€” character-specific.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/) guild docs, `docs/skill-harvest-log.md`
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

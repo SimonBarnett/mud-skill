@@ -1,8 +1,8 @@
 ﻿---
 name: discworld-shop-general
 description: >
-  Discworld MUD general stores: food, drink, containers, sobriety, AM vs
-  regional shops. Use when the user says DW general store, buy food AM, or
+  Discworld MUD general stores and grocers: food, containers, sobriety.
+  Use when the user says DW general store, buy food AM, Grog's Groceries, or
   /discworld-shop-general.
   Does not stamp ready for human UAT.
 ---
@@ -10,42 +10,38 @@ description: >
 # General shops
 
 Companion to `mud-skill` and `discworld-money-currency`.
-Surfaces: **shop, location** (#23, #26).
+Surfaces: **shop, location** (#23, #26 FIX).
 
 **Sources (link-out):**
 
-- [Discworld MUD wiki](https://discworld.starturtle.net/) — shop indexes
-- [Kefka item DB](https://dw.daftjunk.com/items/index.php) — 800+ shops indexed
-- Newbie docs on **sobriety** and Greg combat (`discworld-fight-newbie-greg`)
+- [Grog's Groceries (Kefka DB)](https://dw.daftjunk.com/items/index.php?item=162&shop=21)
+- [Fresh Fruit on Baker (Kefka DB)](https://dw.daftjunk.com/items/index.php?item=162&shop=21)
+- [Corn on the cob — purchase locations](https://dw.daftjunk.com/items/index.php?item=158)
+- [Goth mudder AM shop A–Z](http://gothmudders.com/maps/atoz.htm)
+- [Making money — general stores](https://dwwiki.mooo.com/wiki/Making_money)
 
-## LOCKED — What general stores sell
+## LOCKED — Named shops (Ankh-Morpork)
 
-- **Food and drink** — restore HP/hunger cues; affect **sobriety** (matters for
-  newbie combat training with Greg per public FAQ).
-- **Containers** — bags, bottles; weight limits tie to encumbrance.
-- **Misc supplies** — rope, lights, mundane tools per room stock (read descriptions).
+| Shop (public name) | Location (public text) | Notes |
+|--------------------|------------------------|--------|
+| **Grog's Groceries** | **Middle of Fast Lane**, Ankh-Morpork | Groceries: corn, carrots, apples, cabbage, potatoes, cheese, buns, ham (Kefka shop 21 / item location text) |
+| **Fresh Fruit on Baker** | **Baker Street**, near God Street intersection | Fruit and veg price list on Kefka (carrots, melons, etc.) |
+| **Holbrook's General Shop** | Grid **A7** on public AM map index | Listed under General Shops (atoz.htm) |
+| **Elm Street General Shop** | Grid **B6** (atoz.htm) | General store class — verify stock in room |
 
-## LOCKED — Agent workflow
+## LOCKED — Workflow
 
-1. Pay in **local currency** only.
-2. `buy` quantities the human approves; keep emergency food before wilderness travel
-   (`discworld-travel-transport`).
-3. Do not `drop` unique containers with quest items inside.
-
-## LOCKED — Finding shops
-
-- No single LOCKED list of every general store name — use in-game exploration,
-  wiki shop category, or Kefka DB search by city name.
-- **Ankh-Morpork** has dense shop coverage along commercial streets (Tenth Egg,
-  Elm, Treacle, etc.) — pair with `discworld-city-ankh-morpork` and
-  `discworld-ankh-survival` for safe routing.
+1. Pay in **AM dollars** (or local currency) shown on price tags.
+2. Food/drink affects **sobriety** — relevant before Greg training (`discworld-fight-newbie-greg`).
+3. `buy` only what human approves; keep travel rations before carriages (`discworld-travel-transport`).
+4. General stores buy loot for less than fences — `discworld-shop-pawn-trade` / Making money wiki.
 
 ## UNKNOWN
 
-- Exact ENAME of each food item — room text only.
-- Best sobriety-safe drink before training — experiment or read item desc.
+- Live stock counts — room text only.
+- Other cities' general stores — use Kefka city filter; not tabulated here.
 
 ## Do not
 
-- Invent shop names on a street not verified in game.
+- Invent shop ENAMEs off-map.
 - Stamp ready for human UAT.

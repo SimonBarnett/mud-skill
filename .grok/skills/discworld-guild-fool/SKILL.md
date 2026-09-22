@@ -1,31 +1,35 @@
-﻿---
+---
 name: discworld-guild-fool
 description: >
-  Discworld MUD fool guild: jesting, entertainment, low combat focus.
+  Discworld MUD Fools' guild playbook leaflet.
+  Does not stamp ready for human UAT.
 ---
 
-# Fools Guild
+# Fools'
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **guild, lore** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill` and `discworld-mud`. Surfaces: **guild, fight, lore** (#23, #26 FIX).
+No invented host, port, or credentials.
+
+**Sources (link-out):**
+
+- https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fnewbie%2Ffools_guild
+- https://discworld.starturtle.net/
+- https://dwwiki.mooo.com/wiki/Guilds
 
 ## LOCKED
 
-- Fool is one of seven working guilds on Discworld MUD (issue #12 table).
-- Roleplay-heavy; combat is not the primary path (public orientation).
-- Confirm character intent with human before join  - hard to unwind.
+1. LOCKED — Read in-game `/doc/newbie/fools_guild` and guild help before join (starturtle URL above).
+2. LOCKED — Human confirms guild join — resign is painful; load `discworld-mud` class table.
+3. LOCKED — Train via `advance` in guild advance rooms and TM (`discworld-skills-experience`); ask before big XP spends.
+4. LOCKED — Combat and theft default human-in-the-loop (`mud-skill` combat gate).
+5. LOCKED — Fool is roleplay/entertainment focused; not a combat progression guild (public fools_guild orientation).
+6. LOCKED — Confirm joke/toxic RP boundaries with human before public channels.
 
 ## UNKNOWN
 
-- Skill progression and quest gags  - wiki sparse; harvest in play.
+- Skill progression gags — sparse public wiki; harvest during play.
 
-## Agent playbook (#26)
+## Do not
 
-1. LOCKED â€” Human confirms guild join; read in-game `/doc/newbie/fool_guild` or equivalent help on [https://discworld.starturtle.net/](https://discworld.starturtle.net/).
-2. LOCKED â€” Class playbooks in `discworld-mud` for warrior/witch; others use this leaflet + game teachers.
-3. LOCKED â€” Advance skills in guild rooms (`discworld-skills-experience`); ask before large `advance` spends.
-4. LOCKED â€” Combat defaults human-in-the-loop (`mud-skill` combat procedure).
-5. UNKNOWN â€” Optimal primaries and quest gear â€” character-specific.
-
-**Sources:** [https://discworld.starturtle.net/](https://discworld.starturtle.net/) guild docs, `docs/skill-harvest-log.md`
+- Invent room ENAMEs or login details.
+- Stamp ready for human UAT (Bob only).

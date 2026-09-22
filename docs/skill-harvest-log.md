@@ -97,3 +97,12 @@ Sources (link-out, no credentials):
 - Shop locations: [Kefka DB](https://dw.daftjunk.com/items/index.php), [Elm Street Forge](http://dwmud.pbworks.com/w/page/18434059/Elm%20Street%20Forge)
 
 Workers do not stamp UAT.
+
+## 2026-09-22 — issue #26 FIX (MRB FAIL #29)
+
+Replaced `Expand-Issue26Stubs.ps1` template stamps on **38** `discworld-*` leaflets with
+topic-specific harvest via `tools/gen_issue26_mrb29_fix.py` (per-topic starturtle/dwwiki/Kefka
+URLs). Filled shop leaflets **general / pawn / magic** with named AM shops + locations.
+Removed deprecated expand script.
+
+MRB #29 blockers addressed; re-hand MRB on new SHA. No UAT stamp.
