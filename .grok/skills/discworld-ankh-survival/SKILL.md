@@ -26,7 +26,7 @@ especially a **new character** in city streets. If the room is not AM, defer to
 
 1. **LOCKED — Connection** — Use only operator-supplied host/client/credentials;
    never invent instance URL, port, or player login (U1/L6).
-   LOCKED — Do not start this first-10-minute ritual until a human is past the terms screen. The 2026-09-22 playtest stopped at the terms and never saw Ankh-Morpork.
+   LOCKED — Start this ritual only after the terms `[yes/no]` prompt has been answered `yes` (Simon exception, issue #38) and the game text shows Ankh-Morpork. Do not start it while still on the terms screen.
 2. **LOCKED — Orient** — `look` (room + exits). Read **exits from game text only**.
    Note whether the room is **lit** and whether NPCs/players are present.
 3. **LOCKED — Vitals** — `score` (and `hp` / health cues if the game shows them).

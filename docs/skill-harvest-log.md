@@ -118,3 +118,9 @@ Source: https://discworld.starturtle.net/lpc/playing/getting_started.html
 plus the session recorded on issue #33.
 
 Workers do not stamp UAT.
+
+## 2026-09-23 — terms exception (issue #38)
+
+Playtest recorded the yes/no prompt. Decline (`no`) prints `Come back soon!` and closes. Simon granted an exception on #bobiverse: the agent sends `yes` and continues. The screen after `yes` was not observed.
+
+Workers do not stamp UAT.
