@@ -10,9 +10,21 @@ description: >
 # MUD skill (umbrella)
 
 Playbooks for agents in text MUDs. Prefer world-specific companions when
-the game is named (start with `discworld-mud`; **50+** Discworld leaflets
-under `.grok/skills/discworld-*` for cities, locations, shops, lore, fighting,
-weapons, and guilds — issue #23).
+the game is named (start with `discworld-mud`; **57+** leaflets under
+`.grok/skills/discworld-*` and topic skills — issues #23, #26).
+
+## Topic playbooks (#26)
+
+| Topic | Skill |
+|-------|--------|
+| Character creation (umbrella) | `mud-character-creation` |
+| Discworld char create | `discworld-character-creation` |
+| Achaea char create | `achaea-character-creation` |
+| Death / corpses | `discworld-death-recovery`, lore: `discworld-lore-death` |
+| Money / currency | `discworld-money-currency` |
+| Shops (where + workflow) | `discworld-shop-*` |
+| Travel | `discworld-travel-transport` |
+| Skills / XP | `discworld-skills-experience` |
 
 When connected to **Discworld MUD** and room text or the human indicates
 **Ankh-Morpork** (AM), load companion **`discworld-ankh-survival`** before

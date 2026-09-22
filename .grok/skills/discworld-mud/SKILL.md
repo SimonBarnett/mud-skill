@@ -14,13 +14,18 @@ below are P1 depth harvested from public newbie docs (link-out in
 `docs/skill-harvest-log.md`). Mark **LOCKED** vs **UNKNOWN**; do not invent
 login or instance URLs (L6).
 
-## Skill pack (#23)
+## Skill pack (#23, #26)
 
-LOCKED — Fifty companion leaflets live under `.grok/skills/discworld-*` (city,
-location, shop, lore, fight, weapon, guild). Load the narrowest match:
+LOCKED — Companion leaflets under `.grok/skills/discworld-*` plus filled topic
+skills (issue #26). Load the narrowest match:
 
 | Topic | Example skill names |
 |-------|---------------------|
+| Character creation | `discworld-character-creation`, `mud-character-creation` |
+| Death | `discworld-death-recovery`, `discworld-lore-death` |
+| Money | `discworld-money-currency` |
+| Travel | `discworld-travel-transport` |
+| Skills / XP | `discworld-skills-experience`, `discworld-fight-skills-advance` |
 | City | `discworld-city-ankh-morpork`, `discworld-city-lancre`, … |
 | Location | `discworld-location-am-guild-quarter`, `discworld-location-am-sewers`, … |
 | Guild | `discworld-guild-warrior`, `discworld-guild-witch`, … |
@@ -31,21 +36,20 @@ location, shop, lore, fight, weapon, guild). Load the narrowest match:
 
 Keep deep class steps here; extend a guild leaflet when a fact is guild-specific.
 
-## Classes / guilds (stub)
+## Classes / guilds
 
-Seven **working** guilds on Discworld MUD (names from public newbie/guild
-orientation — link-out in `docs/skill-harvest-log.md`). Stubs only; no invented
-recruiter rooms or login.
+Seven **working** guilds (public FAQ / newbie docs). Leaflets hold guild-specific
+facts; warrior and witch **numbered playbooks** below are P1 depth.
 
-| Guild | Notes |
-|-------|-------|
-| Warrior | UNKNOWN — expand P1 |
-| Wizard | UNKNOWN — expand P1 |
-| Witch | UNKNOWN — expand P1 |
-| Thief | UNKNOWN — expand P1 |
-| Priest | UNKNOWN — expand P1 |
-| Assassin | UNKNOWN — expand P1 |
-| Fool | UNKNOWN — expand P1 |
+| Guild | Leaflet | Playbook depth |
+|-------|---------|----------------|
+| Warrior | `discworld-guild-warrior` | **LOCKED** — below + specialisations doc |
+| Wizard | `discworld-guild-wizard` | P1 leaflet; spells in-game |
+| Witch | `discworld-guild-witch` | **LOCKED** — below |
+| Thief | `discworld-guild-thief` | P1 leaflet + AM crime context |
+| Priest | `discworld-guild-priest` | P1 — patron choice critical |
+| Assassin | `discworld-guild-assassin` | P1 — PvP human-in-the-loop |
+| Fool | `discworld-guild-fool` | P1 — roleplay-heavy |
 
 ## Newbie path
 

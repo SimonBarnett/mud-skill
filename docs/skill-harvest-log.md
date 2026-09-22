@@ -69,3 +69,31 @@ Sources (link-out):
 
 Harvest routing table extended in `harvest-mud-skill`; `discworld-mud` indexes
 the pack. `tools/Install-MudSkill.ps1` installs all leaflets; BT0 checks count >= 50.
+
+## 2026-09-22 — issue #26 (MORE — fill stubs)
+
+Web search + public docs used to fill topic playbooks and expand shop/death/skills
+leaflets. Added seven skills; appended `#26` agent playbooks to 38 short
+`discworld-*` leaflets via `tools/Expand-Issue26Stubs.ps1`.
+
+New skills:
+
+- `mud-character-creation`, `discworld-character-creation`, `achaea-character-creation`
+- `discworld-death-recovery`, `discworld-money-currency`, `discworld-travel-transport`
+- `discworld-skills-experience`
+
+Filled / expanded: all `discworld-shop-*`, `discworld-lore-death`,
+`discworld-fight-skills-advance`, `discworld-city-ankh-morpork`, `mud-skill` topic
+index, `discworld-mud` pack index.
+
+Sources (link-out, no credentials):
+
+- [Nationality](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Fnationality), [races](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Fraces), [rearrange](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fhelpdir%2Frearrange)
+- [Newbie dying](http://discworld.atuin.net/lpc/playing/documentation.c?path=%2Fnewbie%2Fdying), [corpse](http://discworld.atuin.net/lpc/playing/documentation.c?path=%2Fconcepts%2Fcorpse), [Death wiki](https://dwwiki.mooo.com/wiki/Death)
+- [Currency](https://dwwiki.mooo.com/wiki/Currency), [Money changer](https://dwwiki.mooo.com/wiki/Money_changer)
+- [Travel](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Ftravel), [Carriages](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Fcarriages)
+- [Taskmaster](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Ftaskmaster), [advance](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fhelpdir%2Fadvance)
+- [Achaea races](https://www.achaea.com/races), [Achaea newbie guide](https://www.achaea.com/newbie-guide)
+- Shop locations: [Kefka DB](https://dw.daftjunk.com/items/index.php), [Elm Street Forge](http://dwmud.pbworks.com/w/page/18434059/Elm%20Street%20Forge)
+
+Workers do not stamp UAT.
