@@ -18,3 +18,12 @@ Does not stamp ready for human UAT. No invented host, port, or credentials.
 ## UNKNOWN
 
 - Assassin thrown builds  - guild-specific.
+
+## Agent playbook (#26)
+
+1. LOCKED â€” Buy weapons/armour from named shops (`discworld-shop-weapons`, `discworld-shop-armour`).
+2. LOCKED â€” Match weapon type to `skills fighting` tree; check burden (`discworld-weapon-armour-encumbrance`).
+3. LOCKED â€” `judge` / `vurdere` when you have evaluating skills (wiki weapons/armour pages).
+4. UNKNOWN â€” Best weapon for your spec â€” build-specific.
+
+**Sources:** [Weapons wiki](https://dwwiki.mooo.com/wiki/Weapons), [Armours wiki](https://dwwiki.mooo.com/wiki/Armours)

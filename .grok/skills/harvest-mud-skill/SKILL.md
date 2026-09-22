@@ -31,6 +31,11 @@ Route facts to the right skill file:
 | Weapons, armour, burden | `discworld-weapon-*` |
 | Buying, selling, components | `discworld-shop-*` |
 | Canon and roleplay tone | `discworld-lore-*` |
+| Character creation (any MUD) | `mud-character-creation`, `discworld-character-creation`, `achaea-character-creation` |
+| Death recovery mechanics | `discworld-death-recovery` |
+| Currency and changers | `discworld-money-currency` |
+| Carriages, portals, travel | `discworld-travel-transport` |
+| Taskmaster, advance, XP | `discworld-skills-experience` |
 | Harvest ritual itself | this file |
 
 Fleet-wide CAST IRON routing table: `SimonBarnett/agentic_build` skill `harvest-agent-skills`.

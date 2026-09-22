@@ -1,21 +1,50 @@
 ﻿---
 name: discworld-lore-death
 description: >
-  Discworld MUD lore guide: Death, afterlife, mort rituals.
+  Discworld MUD lore guide: Death NPC, afterlife tone, mort rituals, roleplay.
+  Mechanics: see discworld-death-recovery. Use for DW death lore or
+  /discworld-lore-death.
+  Does not stamp ready for human UAT.
 ---
 
 # Death and afterlife (lore)
 
-Companion to `mud-skill` and `discworld-mud`. Surfaces: **lore** (issue #23).
-Public facts only  - link-out [https://discworld.starturtle.net/](https://discworld.starturtle.net/) and [https://www.discworldmud.org/](https://www.discworldmud.org/).
-Does not stamp ready for human UAT. No invented host, port, or credentials.
+Companion to `mud-skill`, `discworld-death-recovery` (mechanics), and
+`discworld-mud`. Surfaces: **lore** (#23, #26).
 
-## LOCKED
+**Sources (link-out):**
 
-- Death personification is core Discworld canon; MUD respects Death NPC tropes.
-- Losing items or corpses follows game rules  - read death message carefully.
-- No real-world harm; roleplay tone.
+- [Newbie: dying](http://discworld.atuin.net/lpc/playing/documentation.c?path=%2Fnewbie%2Fdying)
+- [Discworld MUD wiki](https://discworld.starturtle.net/)
+- Pratchett canon — Death as anthropomorphic figure (high level tone only)
+
+## LOCKED — Tone and roleplay
+
+- **Death** (capital D) is central Discworld canon; the MUD uses Death NPC tropes
+  respectfully — no real-world harm; keep chat proportionate.
+- Dying is a **setback**, not session end — recovery and corpse retrieval are
+  normal play (`discworld-death-recovery`).
+
+## LOCKED — Lore vs mechanics
+
+| Topic | This skill (lore) | `discworld-death-recovery` |
+|-------|-------------------|----------------------------|
+| Afterlife book, helpers, shrines | Orientation | Step-by-step |
+| Corpse decay, `permit`, loot ethics | Mention | Full procedure |
+| Playerkill corpse rules | UNKNOWN detail | Flag PK help |
+
+## LOCKED — Social norms
+
+- Looting **another player's** corpse without permission is antisocial (public
+  corpse help).
+- Ask human before roleplay that mocks real death or griefing with corpses.
 
 ## UNKNOWN
 
-- Speed of corpse decay and retrieval  - game mechanics.
+- Quest-specific afterlife rooms — spoiler; in-game only.
+- Exact mort ritual flavour text per deity — priest guild help.
+
+## Do not
+
+- Invent shrine names or ritual syntax.
+- Stamp ready for human UAT.
