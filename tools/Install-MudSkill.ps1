@@ -1,10 +1,11 @@
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
-foreach ($name in @("mud-skill", "discworld-mud", "harvest-mud-skill", "discworld-ankh-survival")) {
-  $src = Join-Path $root ".grok\skills\$name"
+$skillsRoot = Join-Path $root ".grok\skills"
+foreach ($skillMd in Get-ChildItem (Join-Path $skillsRoot "*\SKILL.md")) {
+  $name = $skillMd.Directory.Name
   $dest = Join-Path $HOME ".grok\skills\$name"
   New-Item -ItemType Directory -Force -Path $dest | Out-Null
-  Copy-Item -Force (Join-Path $src "SKILL.md") (Join-Path $dest "SKILL.md")
+  Copy-Item -Force $skillMd.FullName (Join-Path $dest "SKILL.md")
   Write-Output "Installed $name -> $dest"
 }
 exit 0

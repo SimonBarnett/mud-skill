@@ -53,3 +53,19 @@ Sources (link-out):
 - [Guide for young warriors](https://dwwiki.mooo.com/wiki/Guide_for_young_warriors) — etiquette pointers only
 - [Guide for young witches](https://dwwiki.mooo.com/wiki/Guide_for_young_witches) — early skill themes only
 - GitHub issue #20 — acceptance A1–A4 scope
+
+## 2026-09-22 — issue #23 (much deeper skill pack)
+
+Added **46** companion skills under `.grok/skills/discworld-*` (50 total with
+seed skills) covering **city**, **location**, **shop**, **lore**, **fight**,
+**weapon**, and **guild** surfaces. Facts are public wiki/site orientation
+only; each leaflet marks LOCKED vs UNKNOWN. No credentials or invented ENAMEs.
+
+Sources (link-out):
+
+- [Discworld MUD wiki](https://discworld.starturtle.net/)
+- [discworldmud.org](https://www.discworldmud.org/)
+- GitHub issue #23 — acceptance A1–A5 scope
+
+Harvest routing table extended in `harvest-mud-skill`; `discworld-mud` indexes
+the pack. `tools/Install-MudSkill.ps1` installs all leaflets; BT0 checks count >= 50.

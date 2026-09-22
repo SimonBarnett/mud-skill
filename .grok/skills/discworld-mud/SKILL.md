@@ -14,6 +14,23 @@ below are P1 depth harvested from public newbie docs (link-out in
 `docs/skill-harvest-log.md`). Mark **LOCKED** vs **UNKNOWN**; do not invent
 login or instance URLs (L6).
 
+## Skill pack (#23)
+
+LOCKED — Fifty companion leaflets live under `.grok/skills/discworld-*` (city,
+location, shop, lore, fight, weapon, guild). Load the narrowest match:
+
+| Topic | Example skill names |
+|-------|---------------------|
+| City | `discworld-city-ankh-morpork`, `discworld-city-lancre`, … |
+| Location | `discworld-location-am-guild-quarter`, `discworld-location-am-sewers`, … |
+| Guild | `discworld-guild-warrior`, `discworld-guild-witch`, … |
+| Fight | `discworld-fight-combat-basics`, `discworld-fight-wimpy-flee`, … |
+| Weapon | `discworld-weapon-swords`, `discworld-weapon-armour-encumbrance`, … |
+| Shop | `discworld-shop-weapons`, `discworld-shop-pawn-trade`, … |
+| Lore | `discworld-lore-death`, `discworld-lore-gods-patrons`, … |
+
+Keep deep class steps here; extend a guild leaflet when a fact is guild-specific.
+
 ## Classes / guilds (stub)
 
 Seven **working** guilds on Discworld MUD (names from public newbie/guild
