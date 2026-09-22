@@ -12,6 +12,10 @@ description: >
 Playbooks for agents in text MUDs. Prefer world-specific companions when
 the game is named (start with `discworld-mud`).
 
+When connected to **Discworld MUD** and room text or the human indicates
+**Ankh-Morpork** (AM), load companion **`discworld-ankh-survival`** before
+generic navigation — especially for newbies (“dead in 10 minutes” in AM).
+
 ## GATES (stub)
 
 | Gate | Status | Entry |
@@ -55,7 +59,8 @@ the game is named (start with `discworld-mud`).
 ## Do
 
 1. Confirm which MUD (never invent host/port/login).
-2. Load the matching companion skill if present.
+2. Load the matching companion skill if present (Discworld + AM →
+   `discworld-ankh-survival`; other Discworld → `discworld-mud`).
 3. Keep a short session log (room, exits, HP/GP if shown) — no passwords.
 4. Ask before irreversible actions (pkill, drop unique, guild resign).
 
