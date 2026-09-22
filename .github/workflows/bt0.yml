@@ -1,0 +1,12 @@
+name: bt0
+on:
+  push:
+  pull_request:
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: BT0
+        shell: pwsh
+        run: powershell -NoProfile -File .\tools\Validate-MudSkill.ps1
