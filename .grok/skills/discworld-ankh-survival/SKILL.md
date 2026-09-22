@@ -42,7 +42,7 @@ especially a **new character** in city streets. If the room is not AM, defer to
 7. **LOCKED — Inventory discipline** — `inventory` after any fight or gift. Do not
    `drop` or `give` unique items. Ask before `sell`/`buy` large purchases.
 8. **LOCKED — Guild recruiter** — Goal: find a **guild recruiter** for the class
-   the human chose (Warrior / Thief / Witch / Wizard per `discworld-mud` stubs).
+   the human chose (one of the seven working guilds in `discworld-mud`).
    Use `look` on NPCs; ask locals in-character only if the human approves spam.
    Do not invent recruiter room names — follow signs and game directions.
 9. **LOCKED — Pkill / theft** — Stop and ask the human before **player-kill**,
