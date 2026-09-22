@@ -10,7 +10,9 @@ description: >
 # MUD skill (umbrella)
 
 Playbooks for agents in text MUDs. Prefer world-specific companions when
-the game is named (start with `discworld-mud`).
+the game is named (start with `discworld-mud`; **50+** Discworld leaflets
+under `.grok/skills/discworld-*` for cities, locations, shops, lore, fighting,
+weapons, and guilds — issue #23).
 
 When connected to **Discworld MUD** and room text or the human indicates
 **Ankh-Morpork** (AM), load companion **`discworld-ankh-survival`** before

@@ -22,8 +22,15 @@ Route facts to the right skill file:
 | Playbook | Owner skill |
 |----------|-------------|
 | Generic connect / navigate / combat gates | `mud-skill` |
-| Discworld classes, guilds | `discworld-mud` |
+| Discworld classes, guilds (overview) | `discworld-mud` |
 | Ankh-Morpork survival rituals | `discworld-ankh-survival` |
+| City / region travel and hubs | `discworld-city-*` |
+| Streets, dungeons, landmarks | `discworld-location-*` |
+| Guild-specific facts (beyond class playbook here) | `discworld-guild-*` |
+| Combat commands and training | `discworld-fight-*` |
+| Weapons, armour, burden | `discworld-weapon-*` |
+| Buying, selling, components | `discworld-shop-*` |
+| Canon and roleplay tone | `discworld-lore-*` |
 | Harvest ritual itself | this file |
 
 Fleet-wide CAST IRON routing table: `SimonBarnett/agentic_build` skill `harvest-agent-skills`.

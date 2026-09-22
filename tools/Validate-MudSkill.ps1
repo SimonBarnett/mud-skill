@@ -11,8 +11,20 @@ Require-File ".grok\skills\harvest-mud-skill\SKILL.md"
 Require-File "docs\functional-spec.md"
 Require-File "docs\feature-request-mud-skill-2026-09-22.md"
 Require-File "docs\build-and-test-plan.md"
+Require-File "docs\feature-request-mud-much-deeper-2026-09-22.md"
+Require-File "docs\build-and-test-plan-mud-much-deeper-2026-09-22.md"
 Require-File "docs\skill-harvest-log.md"
 Require-File "tools\Install-MudSkill.ps1"
+$skillFiles = Get-ChildItem (Join-Path $root ".grok\skills\*\SKILL.md")
+if ($skillFiles.Count -lt 50) {
+  Write-Error "Need at least 50 SKILL.md under .grok/skills (found $($skillFiles.Count))"
+  exit 1
+}
+$surfaceBlob = ($skillFiles | ForEach-Object { Get-Content $_.FullName -Raw }) -join "`n"
+foreach ($pat in @("location", "shop", "lore", "fight", "weapon", "guild", "city")) {
+  if ($surfaceBlob -notmatch $pat) { Write-Error "Skill pack missing surface keyword: $pat"; exit 1 }
+}
+Require-File ".grok\skills\discworld-ankh-survival\SKILL.md"
 $mud = Get-Content (Join-Path $root ".grok\skills\mud-skill\SKILL.md") -Raw
 foreach ($n in @("name: mud-skill", "ready for human UAT", "Discworld")) {
   if ($mud -notmatch [regex]::Escape($n)) { Write-Error "mud-skill missing: $n"; exit 1 }
