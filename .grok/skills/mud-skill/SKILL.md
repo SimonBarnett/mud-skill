@@ -71,8 +71,6 @@ generic navigation — especially for newbies (“dead in 10 minutes” in AM).
 - Confuse this with `MUD-AI` (separate product).
 ## CAST IRON harvest (Simon 2026-09-22)
 
-This repo must keep a harvest foundation like `agentic_build`. When you
-learn a MUD / Discworld playbook, harvest it into `.grok/skills/` here
-and note `docs/skill-harvest-log.md`. Do not leave it only in `~/.grok`.
-Empty harvest: no commit. See `SimonBarnett/agentic_build` skill
-`harvest-agent-skills`.
+When you learn a MUD / Discworld playbook, load and follow
+`harvest-mud-skill` (this repo). Do not leave playbooks only in
+`~/.grok/skills`.

@@ -23,3 +23,7 @@ newbie-oriented material (link-out only, no instance credentials):
 Ritual steps are agent procedure (lit streets, no early alley wander, score/HP,
 guild recruiter, ask before pkill/theft); not copied verbatim from any one page.
 
+## 2026-09-22 — harvest-mud-skill (issue #4)
+
+Added dedicated `harvest-mud-skill` SKILL.md; `mud-skill` CAST IRON points at it.
+Install/validator include the harvest skill (H1–H2).
