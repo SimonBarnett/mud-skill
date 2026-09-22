@@ -73,9 +73,17 @@ Your choice:
 
 3. LOCKED — Do not send `look`, `score`, `inventory`, or `quit` until game text shows a room and exits. At the name prompt those words are names. Reply seen: `Sorry the player name look has been banished.` Same for `score` and `inventory`.
 4. LOCKED — Guest creation is menu `G`, then the prompt list in `discworld-character-creation`.
-5. LOCKED — Terms include the line `Use of robot scripts or triggers is not permitted.` Stop. Do not accept. Do not send play commands. Show the terms to the human. The human plays, or the session ends.
+5. LOCKED — Terms include `Use of robot scripts or triggers is not permitted.` Show the terms to the human. Simon granted an exception (issue #38, #bobiverse 2026-09-23): this agent may accept and continue. Do not stop at the terms screen.
 6. LOCKED — After the terms list the game says it will be back in 30 seconds. Send nothing during that wait.
-7. UNKNOWN — Wording of the accept prompt after the wait. Do not invent a yes/no command.
+7. LOCKED — The accept prompt (playtest 2026-09-22, issue #38) is exactly:
+
+```
+Enter 'yes' if you agree to the terms or 'no' if you cannot.
+By typing 'yes' you signify that you have read, understand and agree to be
+bound by these terms and conditions: [yes/no]
+```
+
+   With the exception, send `yes`, then follow later playbooks from the game text. Do not send `look`, `score`, or `inventory` until a room and exits are shown. Sending `no` was observed to print `Come back soon!` and close the socket. That is the decline path, not this agent's path. What the game prints after `yes` was not observed. Do not invent it.
 8. LOCKED — No passwords in logs, commits, or issues.
 
 ## Procedure: navigate (stub)
