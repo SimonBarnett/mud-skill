@@ -27,3 +27,14 @@ guild recruiter, ask before pkill/theft); not copied verbatim from any one page.
 
 Added dedicated `harvest-mud-skill` SKILL.md; `mud-skill` CAST IRON points at it.
 Install/validator include the harvest skill (H1–H2).
+
+## 2026-09-22 — issue #12 (seven working guilds)
+
+Extended `discworld-mud` guild table with Priest, Assassin, and Fool as
+UNKNOWN P1 stubs (S2 / G1). Warrior / Wizard / Witch / Thief rows unchanged
+except table order aligned to public “seven guilds” lists.
+
+Sources (link-out, no credentials):
+
+- [Discworld MUD wiki](https://discworld.starturtle.net/) — guild / class orientation
+- GitHub issue #12 — acceptance G1/G2 scope (no extra invented guilds)

@@ -14,12 +14,19 @@ from operator-approved sources (U2).
 
 ## Classes / guilds (stub)
 
+Seven **working** guilds on Discworld MUD (names from public newbie/guild
+orientation — link-out in `docs/skill-harvest-log.md`). Stubs only; no invented
+recruiter rooms or login.
+
 | Guild | Notes |
 |-------|-------|
 | Warrior | UNKNOWN — expand P1 |
-| Thief | UNKNOWN — expand P1 |
-| Witch | UNKNOWN — expand P1 |
 | Wizard | UNKNOWN — expand P1 |
+| Witch | UNKNOWN — expand P1 |
+| Thief | UNKNOWN — expand P1 |
+| Priest | UNKNOWN — expand P1 |
+| Assassin | UNKNOWN — expand P1 |
+| Fool | UNKNOWN — expand P1 |
 
 ## Newbie path (stub)
 
