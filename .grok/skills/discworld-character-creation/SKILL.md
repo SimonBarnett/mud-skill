@@ -20,6 +20,22 @@ from public docs only; verify live help in-game when rules change.
 - [rearrange (one-time stat edit)](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fhelpdir%2Frearrange)
 - [Discworld MUD wiki](https://discworld.starturtle.net/)
 
+## LOCKED — Front door (guest, 2026-09-22)
+
+After menu `G` the game showed, in order:
+
+1. `Enter the name you wish to use:`
+2. `How would you like your name capitalised? [Name]` — a blank line kept the suggested capitalisation.
+3. `Should your character be male or female?` — the word `male` was accepted.
+4. `Are you using a screenreader? [yes/no/help]` — `no` was accepted.
+5. Terms and conditions, then `Please read the terms and conditions CAREFULLY! (You have time, we'll be back in 30 seconds)`. Send nothing during the wait.
+6. If those terms forbid robot scripts or triggers, stop. Do not accept. Hand the screen to the human. See `mud-skill` front door.
+7. If the game says `Sorry, someone is already trying to create a character of that name.` choose a different name or wait. Do not hammer the same name.
+8. UNKNOWN — the prompt after the 30 second wait.
+9. UNKNOWN — where menu `N` (new character) diverges from `G`.
+
+Guest blurb shown before the name prompt (orientation only, not a command list): trouble goes to liaison domain or any creator; `liaisons` and `finger` are the commands named on that screen.
+
 ## LOCKED — Species
 
 - Playable characters are **human only** (public races doc). Elves and other

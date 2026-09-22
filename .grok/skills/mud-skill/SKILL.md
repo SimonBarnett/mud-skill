@@ -44,10 +44,39 @@ generic navigation — especially for newbies (“dead in 10 minutes” in AM).
    to use; never invent host, port, TLS, or credentials.
 2. LOCKED — Connect only with operator-supplied details; do not echo passwords
    into logs, commits, or issue comments.
-3. UNKNOWN — Wire format (plain telnet vs TLS vs existing fleet tool) stays
-   U1 until the human or harvest doc names one.
+3. LOCKED — Discworld plain TCP on port 4242 answered (playtest 2026-09-22).
+   TLS port 4245 and any fleet wire client stay UNKNOWN.
 4. LOCKED — After login, capture prompt/character name from game text; if
    login fails, stop and report verbatim errors (no credential guessing).
+
+### Discworld front door (playtest 2026-09-22)
+
+Source: [Getting Started](https://discworld.starturtle.net/lpc/playing/getting_started.html). Observed on plain TCP `discworld.starturtle.net` port 4242. Banner: `LPmud version : DW OS v1.02 on port 4242.`
+
+1. LOCKED — That page names ports 23 and 4242, and TLS port 4245. This session used 4242 only. Treat 23 and 4245 as cited, not re-tested.
+2. LOCKED — The first screen is a menu, not a room:
+
+```
+Q - Quit
+M - Print this menu again
+D - Delete your character
+R - Request a temporary password
+U - Short list of who is on-line
+L - Short list of liaisons on-line
+P - Uptime
+F - Finger someone
+N - New character
+G - Guest character
+Or, enter your current character's name
+Your choice:
+```
+
+3. LOCKED — Do not send `look`, `score`, `inventory`, or `quit` until game text shows a room and exits. At the name prompt those words are names. Reply seen: `Sorry the player name look has been banished.` Same for `score` and `inventory`.
+4. LOCKED — Guest creation is menu `G`, then the prompt list in `discworld-character-creation`.
+5. LOCKED — Terms include the line `Use of robot scripts or triggers is not permitted.` Stop. Do not accept. Do not send play commands. Show the terms to the human. The human plays, or the session ends.
+6. LOCKED — After the terms list the game says it will be back in 30 seconds. Send nothing during that wait.
+7. UNKNOWN — Wording of the accept prompt after the wait. Do not invent a yes/no command.
+8. LOCKED — No passwords in logs, commits, or issues.
 
 ## Procedure: navigate (stub)
 
