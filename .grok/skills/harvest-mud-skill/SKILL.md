@@ -15,6 +15,7 @@ Remote: `https://github.com/SimonBarnett/mud-skill` (`origin/main`). Local clone
 ## CAST IRON (Simon 2026-09-22)
 
 **If you learn something new about MUD play or Discworld, harvest it here.**
+Learned playbooks come back to this repo as a feature request.
 Do not leave a playbook only in `~/.grok/skills`. Do not wait for an hourly task.
 
 Route facts to the right skill file:
