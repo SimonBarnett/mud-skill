@@ -17,19 +17,33 @@ Companion to `mud-skill`, `discworld-fight-skills-advance`, and guild leaflets.
 - [Advancing (concepts)](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Fadvancing)
 - [advance command](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fhelpdir%2Fadvance)
 - [hskills](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fhelpdir%2Fhskills)
-- Playtest issue #41 (new guest `score`)
+- Playtest issues #41, #65–#68 (new guest `score`)
 
 ## LOCKED — New guest score
 
-Two looks on different guests, both a few seconds old, before any guild join:
+Guests a few seconds old in the Mended Drum main bar, before any guild join, get, turn, or exit:
 
-- Do not lock one hit-point or guild-point figure. Hit points were 497 (497) and 498 (498). Guild points were 50 (50) and later 6 (50).
-- These matched: experience 6, level 0 in the Adventurers' Guild, overall rating 0, died 0, wimpy 20%, unburdened (0%), quite comfortable, neutral, worshipping no god, no special abilities, logged in 1 time.
+- Do not lock one hit-point, guild-point, or **experience** figure. Hit points were 497 (497), 498 (498), and 500 (500). Guild points were 50 (50) and later 6 (50). Experience was 6 on some guests and 15 on another (e.g. Fernkjpn `score` before leaving the bar, ten seconds old). Experience on a new guest is not one constant.
+- These matched: level 0 in the Adventurers' Guild, overall rating 0, died 0, wimpy 20%, unburdened (0%), quite comfortable, neutral, worshipping no god, no special abilities, logged in 1 time.
 - Quest points `0 (776)`. Achievement points `0 (1529)`. Social points `50 (50)`.
 - The "can die 7 times" clause is owned by `discworld-death-recovery`. Do not restate 7 as a universal cap.
 - This is not an `advance` or taskmaster result. Do not spend experience from this section.
 
-UNKNOWN — why guild points were 50 and then 6. Taskmaster on a level 0 guest was not tried.
+## LOCKED — New guest `skills` (roots only)
+
+Before any guild, `skills` on Fernkjpn matched:
+
+```
+covert.............. 0 0
+fighting............ 0 0
+crafts.............. 0 -
+magic............... 0 0
+faith............... 0 0
+```
+
+The crafts bonus column was `-`, not `0`. Do not invent branches under these roots.
+
+UNKNOWN — why one guest showed experience 6 and another 15 in the first seconds. Why guild points were 50 and then 6. Taskmaster on a level 0 guest was not tried.
 
 ## LOCKED — Three advancement paths (public advancing doc)
 
