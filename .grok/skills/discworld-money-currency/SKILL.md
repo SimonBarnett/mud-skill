@@ -19,6 +19,15 @@ currency** unless the game shows otherwise.
 - [Money changers (wiki)](https://dwwiki.mooo.com/wiki/Money_changer)
 - [Changer rates sample](https://dwwiki.mooo.com/sined/general/changers.htm)
 - In-game: `help currency` (public references)
+- Playtest issue #41 (guest purse and Drum menu)
+
+## LOCKED — New guest purse (playtest 2026-09-22)
+
+1. A new guest's inventory says `Your purse contains only moths.` Do not buy. Do not assume starting coins.
+2. `read menu` in the Mended Drum main bar priced items in `p` and `A$` together. The full shown list is also in `discworld-location-mended-drum`. Do not add prices that were not printed.
+3. Shown list: crisps 20p, a cheap cigarette 20p, boar scratchings 25p, a meat pie 62p, Morporkian Beer 10p, Soggy Mountain Dew 25p, Ankh Water 50p, Peach Corniche A$1, Classic Mead A$1, Fine Ale A$1.75, Brandy A$2.25, Amanita Liquor A$3.50, Ghlen Livid A$4, Ancient Scumble A$5, Ankhian Port A$12.50, Back Burner A$30, a glass of milk 50p.
+
+UNKNOWN — how moths relate to the brass or dollar ladder. Changer use was not tried.
 
 ## LOCKED — Major currency families
 

@@ -17,6 +17,19 @@ Companion to `mud-skill`, `discworld-fight-skills-advance`, and guild leaflets.
 - [Advancing (concepts)](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Fadvancing)
 - [advance command](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fhelpdir%2Fadvance)
 - [hskills](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fhelpdir%2Fhskills)
+- Playtest issue #41 (new guest `score`)
+
+## LOCKED — New guest score
+
+Two looks on different guests, both a few seconds old, before any guild join:
+
+- Do not lock one hit-point or guild-point figure. Hit points were 497 (497) and 498 (498). Guild points were 50 (50) and later 6 (50).
+- These matched: experience 6, level 0 in the Adventurers' Guild, overall rating 0, died 0, wimpy 20%, unburdened (0%), quite comfortable, neutral, worshipping no god, no special abilities, logged in 1 time.
+- Quest points `0 (776)`. Achievement points `0 (1529)`. Social points `50 (50)`.
+- The "can die 7 times" clause is owned by `discworld-death-recovery`. Do not restate 7 as a universal cap.
+- This is not an `advance` or taskmaster result. Do not spend experience from this section.
+
+UNKNOWN — why guild points were 50 and then 6. Taskmaster on a level 0 guest was not tried.
 
 ## LOCKED — Three advancement paths (public advancing doc)
 
