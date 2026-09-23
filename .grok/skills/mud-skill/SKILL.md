@@ -96,19 +96,21 @@ bound by these terms and conditions: [yes/no]
 6. LOCKED — `Inventory regeneration complete.`
 7. LOCKED — Chatter before the room (town crier, a one-line guild or work nudge) is not the room and not the result of an agent command.
 8. LOCKED — Send the next command only after an `obvious exits` line. On this playtest that room was the Mended Drum (`discworld-location-mended-drum`). Do not describe the room here.
-9. LOCKED — `Queued command: ` is an acknowledgement, not the result. Wait for the real text.
-10. LOCKED — If the game prints the sentence below, quote it. Do not send `stop` or `restart`. Those words were not sent.
+9. LOCKED — When the game says `There are multiple matches` and points at `help parser`, do not send the same noun again. `help parser` was paged with blank lines (same pager rule as item 13 below). It describes ordinals (`1st`, `2nd`) and forms like `blue frog 1`. Do not paste the help page here. The only form tested on a live object was `get 1st colourful brochure from tray`, and that object is owned by `discworld-location-mended-drum`. Do not copy the get line into this skill. Do not lock untested forms as commands that worked.
+10. LOCKED — A leftover `0;10m` with no ESC can sit inside the room map. It is not an exit and not an object. Strip it before matching.
+11. LOCKED — `Queued command: ` is an acknowledgement, not the result. Wait for the real text.
+12. LOCKED — If the game prints the sentence below, quote it. Do not send `stop` or `restart`. Those words were not sent.
 
 ```
 If you are trying to quit and it is queueing things, use "stop" to stop your
 commands, and/or "restart" to start your heartbeat.
 ```
 
-11. LOCKED — Pager line observed: `Read From 1 to 23 of 25 (92%) - return to continue, h for help.` Send a blank line to continue. Do not send another command or `quit` while `return to continue` is the latest prompt. `h` was not sent. Do not describe what `h` prints.
-12. LOCKED — Guest `quit` with a clear queue: Greco the Departure Gecko, then `But not saving for guests... sorry.`, then `Do come again!`, then EOF. A `>` in the middle of that speech is not the end. Do not close the socket before `Do come again!`. Do not lock the bird-versus-chimera line. If the link drops before the farewell, a `net dead statue of ` can remain. That outcome is `discworld-death-recovery`.
+13. LOCKED — Pager line observed: `Read From 1 to 23 of 25 (92%) - return to continue, h for help.` Send a blank line to continue. Do not send another command or `quit` while `return to continue` is the latest prompt. `h` was not sent. Do not describe what `h` prints.
+14. LOCKED — Guest `quit` with a clear queue: Greco the Departure Gecko, then `But not saving for guests... sorry.`, then `Do come again!`, then EOF. A `>` in the middle of that speech is not the end. Do not close the socket before `Do come again!`. Do not lock the bird-versus-chimera line. If the link drops before the farewell, a `net dead statue of ` can remain. That outcome is `discworld-death-recovery`.
 
-UNKNOWN — what `h` prints; whether `stop` or `restart` clears a queue; `chfn` prompts; menu `N`.
-8. LOCKED — No passwords in logs, commits, or issues.
+UNKNOWN — what `h` prints; whether `stop` or `restart` clears a queue; `chfn` prompts; menu `N`; whether `brochure 1`, `here`, or `my` succeed on the tray.
+15. LOCKED — No passwords in logs, commits, or issues.
 
 ## Procedure: navigate (stub)
 

@@ -53,7 +53,7 @@ facts; warrior and witch **numbered playbooks** below are P1 depth.
 
 ## Newbie path
 
-1. LOCKED — Run the Discworld front door in `mud-skill` and `discworld-character-creation`. At the terms `[yes/no]` prompt, send `yes` (Simon exception, issue #38). After `yes`, send nothing until the game has printed an `obvious exits` line. The login `>` and `Queued command: look` are not that line. On this guest the first room was the Mended Drum in Ankh-Morpork. Load `discworld-ankh-survival` and `discworld-location-mended-drum`. Do not paste the room text here. Do not walk up, north, south, or west from this step. Do not invent the host. Confirm the character with the human.
+1. LOCKED — Run the Discworld front door in `mud-skill` and `discworld-character-creation`. At the terms `[yes/no]` prompt, send `yes` (Simon exception, issue #38). After `yes`, send nothing until the game has printed an `obvious exits` line. The login `>` and `Queued command: look` are not that line. On this guest the first room was the Mended Drum in Ankh-Morpork. Load `discworld-ankh-survival` and `discworld-location-mended-drum` before leaving the bar. `look` at an exit previews and does not move you. South and up stay inside the Drum and are owned by those two skills. Come back before leaving the pub. Do not open the closed north door. Do not enter the west stage from this step. Do not paste the room text here. Do not invent the host. Confirm the character with the human.
 2. LOCKED — If starting in **Ankh-Morpork**, load **`discworld-ankh-survival`**
    and run its first-10-minute ritual before guild shopping.
 3. LOCKED — Orient: `look`, `score`, `inventory`, read exits from game text.
