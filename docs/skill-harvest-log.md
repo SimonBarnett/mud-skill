@@ -136,3 +136,9 @@ Workers do not stamp UAT.
 Playtest on plain TCP port 4242: ordinal `get 1st colourful brochure from tray`, open and page-one read, `look` previews vs bare `look`, north door closed, south entrance and up landing with sign, west preview only, Hibiscus and dart board and both newspaper boxes. Harvest into `discworld-location-mended-drum`, parser multiple-match rule in `mud-skill`, Drum trip limits in `discworld-ankh-survival` and `discworld-mud`. Source: GitHub issues #57–#62.
 
 Workers do not stamp UAT.
+
+## 2026-09-23 — brochure turn pages, floor copies, landing (issues #65–#68)
+
+Playtest on plain TCP port 4242: `syntax turn` and tested turns to pages 2–6, page-7 error, six page reads (page 5 pager), `look my brochure`, drop and floor copies with `my` disambiguation, landing picture and lamp, `get colourful brochure 1` and failed `2nd` on a single tray copy, `ask` lines on urchin and Hibiscus. Harvest into `discworld-location-mended-drum`, parser/`my` rules in `mud-skill` item 9, guest experience variability and root `skills` in `discworld-skills-experience`. Source: GitHub issues #65–#68.
+
+Workers do not stamp UAT.
