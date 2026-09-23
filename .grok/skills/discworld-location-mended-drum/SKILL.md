@@ -35,7 +35,7 @@ Companion to `mud-skill` and `discworld-ankh-survival`. Playtest issues #41, #57
 | `read page 2 of brochure` | `Cannot find "page 2 of brochure", no match.` |
 
 9. `turn brochure` with no page, brochure in hand and no other brochure in the room: `See "syntax turn" for the input patterns.`
-10. `syntax turn` lists book forms: `turn to [page] <object>`, `turn to page {of|in} <object>`, `turn pages {of|in} <object>`, `turn [a|1] page {of|in} <object>`, `turn to random page {of|in} <object>`, `turn to random page`, plus turning yourself (`turn <around, [half] right, [half] left, rt, lt>`). Only the two specific-page forms in the table below were sent. Do not claim the other printed forms were used.
+10. `syntax turn` lists book forms: `turn <book> to [page] <number>`, `turn to page <number> {of|in} <book>`, `turn <number> pages {of|in} <book>`, `turn [a|1] page {of|in} <book>`, `turn to random page {of|in} <book>`, `turn <book> to random page`, plus turning yourself (`turn <around, [half] right, [half] left, rt, lt>`). Only the two specific-page forms in the table below were sent. Do not claim the other printed forms were used.
 11. Tested page turns (brochure in hand, unambiguous):
 
 | Command | Result |
@@ -65,7 +65,7 @@ Companion to `mud-skill` and `discworld-ankh-survival`. Playtest issues #41, #57
 
 ## UNKNOWN
 
-- `turn N pages`, `turn a page`, `turn to random page`, and turning yourself. Printed by syntax, not sent.
+- `turn <number> pages {of|in} <book>`, `turn [a|1] page {of|in} <book>`, `turn to random page {of|in} <book>`, `turn <book> to random page`, and turning yourself. Printed by syntax, not sent.
 - How long a dropped brochure stays on the floor.
 - Page 5 streets as real directions.
 - What is beyond the closed north door.
