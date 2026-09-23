@@ -13,6 +13,13 @@ Playbooks for agents in text MUDs. Prefer world-specific companions when
 the game is named (start with `discworld-mud`; **57+** leaflets under
 `.grok/skills/discworld-*` and topic skills — issues #23, #26).
 
+## LOCKED (issue #74)
+
+1. Read https://github.com/SimonBarnett/mud-skill.
+2. Try playing Discworld.
+3. Any issues or feature request: log on this repo.
+4. Harvest learned skills back to the repo as a feature request.
+
 ## Topic playbooks (#26)
 
 | Topic | Skill |
