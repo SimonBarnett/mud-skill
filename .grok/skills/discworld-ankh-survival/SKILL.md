@@ -18,16 +18,17 @@ paste long lore dumps into chat; cite links when the human wants depth.
 
 ## When to load
 
-Load this skill when game text or the human indicates **Ankh-Morpork** (AM),
-especially a **new character** in city streets. If the room is not AM, defer to
-`discworld-mud` or umbrella `mud-skill` navigate stubs.
+Load this skill when the room text says Ankh-Morpork or the Mended Drum, after `obvious exits` is on screen. Do not load it on the login `>`. If the room is not AM, defer to `discworld-mud` or umbrella `mud-skill` navigate stubs.
 
 ## First-10-minute ritual (numbered, fail-closed)
 
 1. **LOCKED — Connection** — Use only operator-supplied host/client/credentials;
    never invent instance URL, port, or player login (U1/L6).
-   LOCKED — Start this ritual only after the terms `[yes/no]` prompt has been answered `yes` (Simon exception, issue #38) and the game text shows Ankh-Morpork. Do not start it while still on the terms screen.
-2. **LOCKED — Orient** — `look` (room + exits). Read **exits from game text only**.
+   LOCKED — Start this ritual only after the terms `[yes/no]` prompt has been answered `yes` (Simon exception, issue #38) and `obvious exits` is on screen. Do not start it on the login `>`.
+   LOCKED — First room for guest `G` is the Mended Drum main bar (`discworld-location-mended-drum`). Do not copy the price list here. Do not take up, north, south, or west from this playbook. Alleys and lit streets apply only after the game shows a street.
+   LOCKED — `look urchin`: a friendly looking street urchin that looks as if he knows his way around Ankh-Morpork. You could probably ask him how to get somewhere. He will probably give you directions. In good shape, standing, wearing a pair of grey worsted trousers and a ripped shirt. `ask urchin` alone returns `What?`. `ask urchin how to get to the warriors guild` returns `Try something else.` Do not lock an ask sentence.
+   LOCKED — Leave with `quit` only as `mud-skill` describes. Do not close before `Do come again!`. A dropped link can leave `the net dead statue of ` in this bar. That is not death.
+2. **LOCKED — Orient** — After a street is shown, `look` (room + exits). Read **exits from game text only**.
    Note whether the room is **lit** and whether NPCs/players are present.
 3. **LOCKED — Vitals** — `score` (and `hp` / health cues if the game shows them).
    If HP is low or you are bleeding/poisoned, treat combat as off-limits until healed.

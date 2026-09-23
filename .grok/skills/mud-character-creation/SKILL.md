@@ -26,6 +26,7 @@ leaflet when the human names the MUD:
 3. Read **only** public help/wiki for that game; mark gaps **UNKNOWN** — do not
    invent room names, ENAMEs, or recruiter locations.
 4. LOCKED — Discworld terms forbid robot scripts. Simon granted an exception (issue #38): at the `[yes/no]` prompt send `yes` and proceed. See `discworld-character-creation`. Do not send `no`.
+5. LOCKED — Discworld guest `G` (name, capitalisation, sex, screenreader, terms `yes`) does not ask nationality before the first room. That room was the Mended Drum. Details are `discworld-character-creation` and `discworld-location-mended-drum`. Menu `N` was not used. Do not claim every new Discworld character skips nationality.
 
 ## LOCKED — Common decision order (pattern)
 

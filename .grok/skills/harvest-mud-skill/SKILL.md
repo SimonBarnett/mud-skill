@@ -26,6 +26,7 @@ Route facts to the right skill file:
 | Ankh-Morpork survival rituals | `discworld-ankh-survival` |
 | City / region travel and hubs | `discworld-city-*` |
 | Streets, dungeons, landmarks | `discworld-location-*` |
+| Mended Drum main bar | `discworld-location-mended-drum` |
 | Guild-specific facts (beyond class playbook here) | `discworld-guild-*` |
 | Combat commands and training | `discworld-fight-*` |
 | Weapons, armour, burden | `discworld-weapon-*` |

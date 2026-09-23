@@ -19,6 +19,16 @@ Companion to `mud-skill`, `discworld-lore-death` (tone/lore), and
 - [Faq-O-Matic: items on death](https://discworld.starturtle.net/external/faq/cache/141.html)
 - [Death (player wiki)](https://dwwiki.mooo.com/wiki/Death)
 - [Unloading rooms](https://dwwiki.mooo.com/wiki/Unloading)
+- Playtest issue #41 (net-dead statue)
+
+## LOCKED — Net-dead statue is not a corpse
+
+1. `the net dead statue of ` in the room means the link dropped before `quit` finished. It is not a corpse. Do not `get all from corpse`, `look corpse`, or raise.
+2. Observed in the Mended Drum main bar after two guests disconnected early: Quillwioy and Quilllnnn. Guests that reached `Do come again!` left no statue.
+3. The leave path is `mud-skill` (Greco, `But not saving for guests... sorry.`, `Do come again!`). Do not copy the quit script here.
+4. A new guest's `score` said: died 0 times and can die 7 times before you are completely dead. That is one new guest's score line. Do not write 7 as the cap for every character.
+
+UNKNOWN — how long a net-dead statue remains. Whether a saved (non-guest) character uses the same statue phrase. Only guests were tested.
 
 ## LOCKED — Immediately after death
 

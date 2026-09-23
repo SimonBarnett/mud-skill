@@ -124,3 +124,9 @@ Workers do not stamp UAT.
 Playtest recorded the yes/no prompt. Decline (`no`) prints `Come back soon!` and closes. Simon granted an exception on #bobiverse: the agent sends `yes` and continues. The screen after `yes` was not observed.
 
 Workers do not stamp UAT.
+
+## 2026-09-23 — guest arrival at the Mended Drum (issues #41–#54)
+
+After `yes` on guest `G`, the login `>` is not a room. The game queues `look`. The first room with `obvious exits` is the Mended Drum main bar. Pager `return to continue` takes a blank line. `quit` waits for `Do come again!`. A dropped link can leave a net-dead statue, which is not a corpse. New leaflet `discworld-location-mended-drum`. Purse is moths. New guest score recorded without a single HP or GP lock.
+
+Workers do not stamp UAT.

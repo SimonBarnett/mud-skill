@@ -31,8 +31,8 @@ After menu `G` the game showed, in order:
 5. Terms and conditions, then `Please read the terms and conditions CAREFULLY! (You have time, we'll be back in 30 seconds)`. Send nothing during the wait.
 6. After the wait the prompt is exactly: `Enter 'yes' if you agree to the terms or 'no' if you cannot.` then `By typing 'yes' you signify that you have read, understand and agree to be bound by these terms and conditions: [yes/no]`. Simon granted an exception (issue #38): send `yes` and proceed. Do not send `no`. See `mud-skill` front door.
 7. If the game says `Sorry, someone is already trying to create a character of that name.` choose a different name or wait. Do not hammer the same name.
-8. UNKNOWN — the screen after `yes`. Not observed. Read it from the game. Do not invent it.
-9. UNKNOWN — where menu `N` (new character) diverges from `G`.
+8. LOCKED — After `yes`: `You have never logged in before.`, saves, the `help rules` box, then `>` and `Queued command: look` before the room, then `chfn`, then `Inventory regeneration complete.` Do not send a command on that `>`. Follow the `mud-skill` front door. The first room on guest `G` was the main bar of the Mended Drum (`discworld-location-mended-drum`). Nationality was not asked before that room.
+9. UNKNOWN — where menu `N` (new character) diverges from `G`. Do not claim every new Discworld character skips nationality.
 
 Guest blurb shown before the name prompt (orientation only, not a command list): trouble goes to liaison domain or any creator; `liaisons` and `finger` are the commands named on that screen.
 
