@@ -130,3 +130,9 @@ Workers do not stamp UAT.
 After `yes` on guest `G`, the login `>` is not a room. The game queues `look`. The first room with `obvious exits` is the Mended Drum main bar. Pager `return to continue` takes a blank line. `quit` waits for `Do come again!`. A dropped link can leave a net-dead statue, which is not a corpse. New leaflet `discworld-location-mended-drum`. Purse is moths. New guest score recorded without a single HP or GP lock.
 
 Workers do not stamp UAT.
+
+## 2026-09-23 — Mended Drum brochure, exits, boxes, sign (issues #57–#62)
+
+Playtest on plain TCP port 4242: ordinal `get 1st colourful brochure from tray`, open and page-one read, `look` previews vs bare `look`, north door closed, south entrance and up landing with sign, west preview only, Hibiscus and dart board and both newspaper boxes. Harvest into `discworld-location-mended-drum`, parser multiple-match rule in `mud-skill`, Drum trip limits in `discworld-ankh-survival` and `discworld-mud`. Source: GitHub issues #57–#62.
+
+Workers do not stamp UAT.
