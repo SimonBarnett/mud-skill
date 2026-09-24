@@ -142,3 +142,14 @@ Workers do not stamp UAT.
 Playtest on plain TCP port 4242: `syntax turn` and tested turns to pages 2–6, page-7 error, six page reads (page 5 pager), `look my brochure`, drop and floor copies with `my` disambiguation, landing picture and lamp, `get colourful brochure 1` and failed `2nd` on a single tray copy, `ask` lines on urchin and Hibiscus. Harvest into `discworld-location-mended-drum`, parser/`my` rules in `mud-skill` item 9, guest experience variability and root `skills` in `discworld-skills-experience`. Source: GitHub issues #65–#68.
 
 Workers do not stamp UAT.
+
+## 2026-09-24 — harvest-agent-skills foundation
+
+Added `.grok/skills/harvest-agent-skills/SKILL.md` (honesty box). Frontmatter
+`github:` is `https://github.com/SimonBarnett/mud-skill`. Skills root was
+already `.grok/skills/`. Repo-local twin of the fleet foundation; game
+leaflets unchanged. `tools/Validate-MudSkill.ps1` requires the foundation
+file (`name`, `github:`, `/harvest-agent-skills`). Install already copies
+every `SKILL.md`.
+
+Workers do not stamp UAT.
