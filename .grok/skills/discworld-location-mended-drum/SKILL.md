@@ -9,7 +9,7 @@ description: >
 
 # Mended Drum main bar
 
-Companion to `mud-skill` and `discworld-ankh-survival`. Playtest issues #41, #57–#62, #65–#68, #88. Guest `G` after `yes`.
+Companion to `mud-skill` and `discworld-ankh-survival`. Playtest issues #41, #57–#62, #65–#68, #78, #88. Guest `G` after `yes`.
 
 ## LOCKED
 
@@ -28,14 +28,20 @@ Companion to `mud-skill` and `discworld-ankh-survival`. Playtest issues #41, #57
 | `get colourful brochure from tray` when the tray already holds several | `There are multiple matches for "colourful brochure". See "help parser" for more information on how to be more specific.` |
 | `get 1st colourful brochure from tray` | `You get a closed colourful brochure from a peanut tray full of brochures.` Staff may print `A member of staff replenishes the supply of brochures.` |
 | `get colourful brochure 1 from tray` when `look tray` shows one brochure | `You get a closed colourful brochure from a peanut tray full of brochures.` Staff may replenish first. |
-| `get 2nd colourful brochure from tray` when the tray shows one brochure | `Cannot find "colourful brochure", no match.` Do not claim `2nd` fails when several brochures are still on the tray — that case was not retested on the early playtests. With three listed (Moteflmg), `get 2nd` / `get 3rd` were not sent (issue #88). |
+| `get 2nd colourful brochure from tray` when the tray shows one brochure | `Cannot find "colourful brochure", no match.` |
+| `get 2nd colourful brochure from tray` when `look tray` shows two | `You get a closed colourful brochure from a peanut tray full of brochures.` One closed brochure remained. Staff replenish did not print on this get (Motewqza, #78). |
+| `get my colourful brochure from tray` with none in hand | `Cannot find "my colourful brochure", no match.` |
+| `get colourful brochure from tray` when `look tray` shows one closed brochure | Staff may print `A member of staff replenishes the supply of brochures.` then `You get a closed colourful brochure from a peanut tray full of brochures.` A later `look tray` may show two. When the tray already lists two, the unnumbered get is still multiple matches. |
+| `look at colourful brochure here` or `get colourful brochure here` while the room copy is on the tray | `Cannot find "colourful brochure here", no match.` |
+| `look at colourful brochure in tray` when the tray shows one closed brochure | a cheerful little brochure. It is closed. |
+| `look at menu here` | Matches `look menu` (it is a menu, something written on it). |
 | `read brochure` while holding the closed brochure | `A closed colourful brochure does not have anything written on it.` |
 | `open brochure` | `You open the colourful brochure to page 1.` |
 | `read brochure` on the open brochure | Page one: Guild of Merchants welcome, badly printed, contents pointing at pages 2–6 (As thee Dysk spins (2), Thyngs you should know (3), Oure beutiful Citie (4), Gylds (5), Thee lands about the city (6)). A second `read brochure` stays on page one. |
 | `read page 2 of brochure` | `Cannot find "page 2 of brochure", no match.` |
 
 9. `turn brochure` with no page, brochure in hand and no other brochure in the room: `See "syntax turn" for the input patterns.`
-10. `syntax turn` lists book forms: `turn <book> to [page] <number>`, `turn to page <number> {of|in} <book>`, `turn <number> pages {of|in} <book>`, `turn [a|1] page {of|in} <book>`, `turn to random page {of|in} <book>`, `turn <book> to random page`, plus turning yourself (`turn <around, [half] right, [half] left, rt, lt>`). Only the two specific-page forms in the table below were sent. Do not claim the other printed forms were used.
+10. `syntax turn` lists book forms: `turn <book> to [page] <number>`, `turn to page <number> {of|in} <book>`, `turn <number> pages {of|in} <book>`, `turn [a|1] page {of|in} <book>`, `turn to random page {of|in} <book>`, `turn <book> to random page`, plus turning yourself (`turn <around, [half] right, [half] left, rt, lt>`). Specific-page forms and the one-page / random forms below were sent. Do not claim `turn <number> pages`, `turn <book> to random page`, or turning yourself were used.
 11. Tested page turns (brochure in hand, unambiguous):
 
 | Command | Result |
@@ -46,6 +52,9 @@ Companion to `mud-skill` and `discworld-ankh-survival`. Playtest issues #41, #57
 | `turn my brochure to page 5` | `You turn the colourful brochure to page 5.` |
 | `turn to page 6 in my brochure` | `You turn the colourful brochure to page 6.` |
 | `turn my brochure to page 7` | `There are only six pages in the open colourful brochure.` then `The open colourful brochure is already open at page 6.` |
+| `turn a page in my brochure` from page 1 | `You turn one page of the colourful brochure.` Next read was page two (#78). |
+| `turn 1 page of my brochure` from page 2 | Same sentence. Next read was page three (#78). |
+| `turn to random page in my brochure` | `You turn the colourful brochure to page 5.` Do not lock page 5 as the only random result (#78). |
 
 12. `read brochure` or `read my brochure` shows the current page and does not advance. Six pages were read. Keep page one as in item 8. Summarize later pages; do not freeze misspellings as match text.
     - Page 2: Great A'Tuin, four elephants, Terry Pratchett.
@@ -62,18 +71,21 @@ Companion to `mud-skill` and `discworld-ankh-survival`. Playtest issues #41, #57
 19. West: preview only. Stage, shady corner, minor villains, exits southeast, east, and north. A bulletin board with notes (one look said 40). Do not enter it from this leaflet.
 20. Up: first-floor landing, lamp, picture, one exit down, wooden sign. `up` moves there. `look sign`: wood, crudely nailed, something written on it. `read sign`: `Rooms no longer to rent due to repeated misuse!` `look picture`: the Broken Drum with its old owner standing outside. The owner does not look happy. `read picture`: `A picture does not have anything written on it.` `look lamp`: hangs from the ceiling on a thin metal chain, gold foil covered brass, old, a large candle, a couple of burnt moths. `down` prints `You carefully descend the stairs.` and returns to the main bar.
 21. A small map and ANSI colour are printed with the room. Strip them before matching the exit line. Map art is not a direction list.
-22. `listen` in the main bar: `You listen carefully.` then the prompt. No further line (Moteflmg, issue #88).
+22. `listen` in the main bar: `You listen carefully.` then the prompt. No further line (#78, Moteflmg #88).
+23. `smell`: `That doesn't work.` (#78).
+24. `inventory` while holding the closed brochure: `You are unburdened (0%) by:`, `Carrying: a closed colourful brochure.`, `Your purse contains only moths.` (#78).
 
 ## UNKNOWN
 
-- `turn <number> pages {of|in} <book>`, `turn [a|1] page {of|in} <book>`, `turn to random page {of|in} <book>`, `turn <book> to random page`, and turning yourself. Printed by syntax, not sent.
+- `turn <number> pages {of|in} <book>`, `turn <book> to random page`, and turning yourself. Printed by syntax, not sent.
 - How long a dropped brochure stays on the floor.
 - Page 5 streets as real directions.
 - What is beyond the closed north door.
 - South and northwest from the entrance.
 - The west stage (not entered). The bulletin board text.
 - Pulling a newspaper door. Paying 5p.
-- `here` on the tray. Whether `my` works on a get from the tray.
+- `here` when a brochure is on the floor.
+- `in` when the tray shows two brochures.
 - `get 2nd` / `get 3rd` / unnumbered get when the tray lists three brochures.
 - Other people and a cat were sometimes present. Do not name them as targets.
 

@@ -143,6 +143,21 @@ Playtest on plain TCP port 4242: `syntax turn` and tested turns to pages 2–6, 
 
 Workers do not stamp UAT.
 
+
+## 2026-09-23 — parser here/in, one-page turns, rising guest experience
+
+Playtest on plain TCP port 4242. Guests Motewqza, Motevqra, and Motelqbn each reached `Do come again!`. No password. Did not buy. Did not open the north door. Did not enter the west stage. Did not leave the Drum for the street.
+
+Harvest:
+
+- `get 2nd colourful brochure from tray` succeeds when the tray shows two. `my` is not a tray get. `here` matches room objects (`look at menu here`) and does not see a brochure that is on the tray. `look at colourful brochure in tray` sees the tray copy when one is shown. Unnumbered `get colourful brochure from tray` succeeded once after a replenish line when look had shown one; it still multiple-matches when two are already listed.
+- `turn a page in my brochure`, `turn 1 page of my brochure`, and `turn to random page in my brochure`.
+- Guest experience rose on Motewqza (171, 234, 401) and Motevqra (60, 153) while root `skills` stayed at 0. Hit points on these guests were 502 (502). Empty-handed inventory. `listen` and `smell` in the main bar.
+
+Edited `discworld-location-mended-drum`, `mud-skill` item 9, `discworld-skills-experience`, and `discworld-money-currency`. Source: GitHub issues #78–#83.
+
+Workers do not stamp UAT.
+
 ## 2026-09-24 — harvest-agent-skills foundation
 
 Added `.grok/skills/harvest-agent-skills/SKILL.md` (honesty box). Frontmatter
