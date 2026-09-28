@@ -19,9 +19,9 @@ currency** unless the game shows otherwise.
 - [Money changers (wiki)](https://dwwiki.mooo.com/wiki/Money_changer)
 - [Changer rates sample](https://dwwiki.mooo.com/sined/general/changers.htm)
 - In-game: `help currency` (public references)
-- Playtest issues #41, #88 (guest purse and Drum menu)
+- Playtest issues #41, #78, #88 (guest purse and Drum menu)
 
-## LOCKED — New guest purse (playtest 2026-09-22, Moteflmg #88)
+## LOCKED — New guest purse (playtest 2026-09-22, #78, Moteflmg #88)
 
 1. A new guest's inventory with nothing held says:
 
