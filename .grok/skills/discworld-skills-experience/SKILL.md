@@ -17,13 +17,13 @@ Companion to `mud-skill`, `discworld-fight-skills-advance`, and guild leaflets.
 - [Advancing (concepts)](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fconcepts%2Fadvancing)
 - [advance command](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fhelpdir%2Fadvance)
 - [hskills](https://discworld.starturtle.net/lpc/playing/documentation.c?path=%2Fhelpdir%2Fhskills)
-- Playtest issues #41, #65–#68 (new guest `score`)
+- Playtest issues #41, #65–#68, #88 (new guest `score`)
 
 ## LOCKED — New guest score
 
 Guests a few seconds old in the Mended Drum main bar, before any guild join, get, turn, or exit:
 
-- Do not lock one hit-point, guild-point, or **experience** figure. Hit points were 497 (497), 498 (498), and 500 (500). Guild points were 50 (50) and later 6 (50). Experience was 6 on some guests and 15 on another (e.g. Fernkjpn `score` before leaving the bar, ten seconds old). Experience on a new guest is not one constant.
+- Do not lock one hit-point, guild-point, or **experience** figure. Hit points were 497 (497), 498 (498), and 500 (500). Guild points were 50 (50) and later 6 (50). Experience was 6 on some guests and 15 on another (e.g. Fernkjpn `score` before leaving the bar, ten seconds old). Moteflmg showed experience 138 at 57 seconds old (issue #88), still in the main bar before any get or exit. Experience on a new guest is not one constant and does not stay still in the first minute.
 - These matched: level 0 in the Adventurers' Guild, overall rating 0, died 0, wimpy 20%, unburdened (0%), quite comfortable, neutral, worshipping no god, no special abilities, logged in 1 time.
 - Quest points `0 (776)`. Achievement points `0 (1529)`. Social points `50 (50)`.
 - The "can die 7 times" clause is owned by `discworld-death-recovery`. Do not restate 7 as a universal cap.
@@ -43,7 +43,7 @@ faith............... 0 0
 
 The crafts bonus column was `-`, not `0`. Do not invent branches under these roots.
 
-UNKNOWN — why one guest showed experience 6 and another 15 in the first seconds. Why guild points were 50 and then 6. Taskmaster on a level 0 guest was not tried.
+UNKNOWN — why one guest showed experience 6 and another 15 in the first seconds, or why Moteflmg showed 138 at 57 seconds. Why guild points were 50 and then 6. Taskmaster on a level 0 guest was not tried. Moteflmg `skills` was not sent.
 
 ## LOCKED — Three advancement paths (public advancing doc)
 
