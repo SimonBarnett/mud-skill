@@ -20,6 +20,15 @@ the game is named (start with `discworld-mud`; **57+** leaflets under
 3. Any issues or feature request: log on this repo.
 4. Harvest learned skills back to the repo as a feature request.
 
+## LOCKED — Audience participation (issue #87)
+
+Play the MUD **with** the user. While connected:
+
+1. Output what the game shows (room text, prompts, score, inventory, errors) in plain language the human can follow.
+2. Output your thinking while playing (why this command, what risk, what you will try next).
+3. Do not silently drive a long command stream with no narration.
+
+
 ## Topic playbooks (#26)
 
 | Topic | Skill |
