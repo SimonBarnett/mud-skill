@@ -9,7 +9,7 @@ description: >
 
 # Mended Drum main bar
 
-Companion to `mud-skill` and `discworld-ankh-survival`. Playtest issues #41, #57–#62, #65–#68. Guest `G` after `yes`.
+Companion to `mud-skill` and `discworld-ankh-survival`. Playtest issues #41, #57–#62, #65–#68, #88. Guest `G` after `yes`.
 
 ## LOCKED
 
@@ -19,7 +19,7 @@ Companion to `mud-skill` and `discworld-ankh-survival`. Playtest issues #41, #57
 4. Helpful street urchin. `look urchin`: a friendly looking street urchin that looks as if he knows his way around Ankh-Morpork. You could probably ask him how to get somewhere. He will probably give you directions. In good shape, standing, wearing a pair of grey worsted trousers and a ripped shirt. `ask urchin` returns `What?`. `ask urchin how to get to the warriors guild` returns `Try something else.` `ask urchin about the mended drum` → `That doesn't work.` Do not lock an ask sentence.
 5. A peanut tray full of brochures is on the bar. A dart board is on a wall. The Green Slab box and an AM Daily box are beside the bar. `look dart board`: magical board, iconograph of a horrified face, nose as the bullseye, something written on it. `read dart board` prints "Top players by wins" and "Top players by average scores per game". Do not lock names or numbers. `look green slab` and `look am daily` return no match. `look box` is multiple matches. `look green slab box` and `look am daily box` are battered metal boxes with a door you could pull open and small white writing saying 5p, each holding a numbered edition. Do not pull the door. Do not buy. Do not lock the edition number.
 6. `look menu`: it is a menu and appears to have something written on it. `read menu` shows prices. Shown: crisps 20p, a cheap cigarette 20p, boar scratchings 25p, a meat pie 62p, Morporkian Beer 10p, Soggy Mountain Dew 25p, Ankh Water 50p, Peach Corniche A$1, Classic Mead A$1, Fine Ale A$1.75, Brandy A$2.25, Amanita Liquor A$3.50, Ghlen Livid A$4, Ancient Scumble A$5, Ankhian Port A$12.50, Back Burner A$30, a glass of milk 50p. Do not buy. A new guest's purse contains only moths (`discworld-money-currency`).
-7. `look tray`: the peanut tray is now a brochure dispenser. Newcomers are told to get a brochure. On the tray: a closed colourful brochure.
+7. `look tray`: the peanut tray is now a brochure dispenser. Newcomers are told to get a brochure. Tray count changes. Observed: one closed colourful brochure; two colourful brochures; three colourful brochures (Moteflmg, issue #88). Do not lock the count to one.
 8. Brochure commands:
 
 | Command | Result |
@@ -28,7 +28,7 @@ Companion to `mud-skill` and `discworld-ankh-survival`. Playtest issues #41, #57
 | `get colourful brochure from tray` when the tray already holds several | `There are multiple matches for "colourful brochure". See "help parser" for more information on how to be more specific.` |
 | `get 1st colourful brochure from tray` | `You get a closed colourful brochure from a peanut tray full of brochures.` Staff may print `A member of staff replenishes the supply of brochures.` |
 | `get colourful brochure 1 from tray` when `look tray` shows one brochure | `You get a closed colourful brochure from a peanut tray full of brochures.` Staff may replenish first. |
-| `get 2nd colourful brochure from tray` when the tray shows one brochure | `Cannot find "colourful brochure", no match.` Do not claim `2nd` fails when several brochures are still on the tray — that case was not retested. |
+| `get 2nd colourful brochure from tray` when the tray shows one brochure | `Cannot find "colourful brochure", no match.` Do not claim `2nd` fails when several brochures are still on the tray — that case was not retested on the early playtests. With three listed (Moteflmg), `get 2nd` / `get 3rd` were not sent (issue #88). |
 | `read brochure` while holding the closed brochure | `A closed colourful brochure does not have anything written on it.` |
 | `open brochure` | `You open the colourful brochure to page 1.` |
 | `read brochure` on the open brochure | Page one: Guild of Merchants welcome, badly printed, contents pointing at pages 2–6 (As thee Dysk spins (2), Thyngs you should know (3), Oure beutiful Citie (4), Gylds (5), Thee lands about the city (6)). A second `read brochure` stays on page one. |
@@ -62,6 +62,7 @@ Companion to `mud-skill` and `discworld-ankh-survival`. Playtest issues #41, #57
 19. West: preview only. Stage, shady corner, minor villains, exits southeast, east, and north. A bulletin board with notes (one look said 40). Do not enter it from this leaflet.
 20. Up: first-floor landing, lamp, picture, one exit down, wooden sign. `up` moves there. `look sign`: wood, crudely nailed, something written on it. `read sign`: `Rooms no longer to rent due to repeated misuse!` `look picture`: the Broken Drum with its old owner standing outside. The owner does not look happy. `read picture`: `A picture does not have anything written on it.` `look lamp`: hangs from the ceiling on a thin metal chain, gold foil covered brass, old, a large candle, a couple of burnt moths. `down` prints `You carefully descend the stairs.` and returns to the main bar.
 21. A small map and ANSI colour are printed with the room. Strip them before matching the exit line. Map art is not a direction list.
+22. `listen` in the main bar: `You listen carefully.` then the prompt. No further line (Moteflmg, issue #88).
 
 ## UNKNOWN
 
@@ -73,6 +74,7 @@ Companion to `mud-skill` and `discworld-ankh-survival`. Playtest issues #41, #57
 - The west stage (not entered). The bulletin board text.
 - Pulling a newspaper door. Paying 5p.
 - `here` on the tray. Whether `my` works on a get from the tray.
+- `get 2nd` / `get 3rd` / unnumbered get when the tray lists three brochures.
 - Other people and a cat were sometimes present. Do not name them as targets.
 
 ## Do not

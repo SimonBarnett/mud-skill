@@ -153,3 +153,24 @@ file (`name`, `github:`, `/harvest-agent-skills`). Install already copies
 every `SKILL.md`.
 
 Workers do not stamp UAT.
+
+## 2026-09-28 — Moteflmg guest (three tray brochures, XP 138)
+
+Playtest on plain TCP port 4242. Guest Moteflmg reached `Do come again!`
+(giant bird). No password. Did not buy. Did not get a brochure. Did not open
+the north door. Did not leave the Drum for the street.
+
+Harvest:
+
+- `look tray` showed three colourful brochures. Tray count is not locked to
+  one (or two).
+- `score`: 500 (500) HP, 50 (50) GP, experience 138 at 57 seconds. Level 0
+  Adventurers' Guild.
+- Empty-handed inventory: unburdened / empty handed / purse moths.
+- `listen` in the main bar: `You listen carefully.` then prompt.
+- Front door and first room matched existing `mud-skill` / Mended Drum locks.
+
+Edited `discworld-location-mended-drum`, `discworld-skills-experience`, and
+`discworld-money-currency`. Source: GitHub issues #88–#92.
+
+Workers do not stamp UAT.
